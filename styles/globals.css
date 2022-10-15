@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: 'SUIT', sans-serif;
+  word-break: keep-all;
+}
+
+.timeline {
+  @apply before:content-[''] before:absolute before:w-4 before:h-4 before:bg-desire before:rounded-full before:-left-[41px] before:border-[5px] before:border-gray-200 before:-translate-x-1/2 ;
+}
