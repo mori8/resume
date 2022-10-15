@@ -11,7 +11,7 @@ type Props = {
 function BlogPostAnchorButton({ title, mainText, imageURL, href }: Props) {
   return (
     <a href={href} target="_blank">
-      <div className="w-full bg-haze flex flex-row gap-6 rounded-2xl p-6 items-center">
+      <div className="w-full bg-haze flex flex-row gap-6 rounded-2xl p-6 items-center shadow shadow-neutral-200">
       <RoundedRectImageView imageURL={imageURL} />
       <div>
         <h5 className="font-bold mb-2">{title}</h5>
