@@ -11,7 +11,7 @@ module.exports = {
       },
       colors: {
         "desire": "#e13e56",
-        "haze": "F6F9F8",
+        "haze": "#F6F9F8",
         "celeste": "#bcfdf7",
         "react": "#61DAFB",
         "fastAPI": "#009688",
@@ -21,5 +21,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/line-clamp'),
+  ],
 };

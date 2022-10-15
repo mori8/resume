@@ -2,18 +2,19 @@ import React from "react";
 import Image from "next/image";
 
 type Props = {
-  imageURL: string;
+  imageURL?: string;
 };
 
 function RoundedRectImageView({ imageURL }: Props) {
   return (
-    <div>
-      <Image
-        src={imageURL}
-        alt="blog post thumbnail"
-        width={200}
-        height={100}
-      />
+    <div className="rounded-lg w-[200px] h-[100px] bg-gray-200 relative">
+      {imageURL && (
+        <Image
+          src={imageURL}
+          alt="blog post thumbnail"
+          layout="fill"
+        />
+      )}
     </div>
   );
 }
