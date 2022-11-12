@@ -5,9 +5,9 @@ type Props = {
   imageURL?: string;
 };
 
-function RoundedRectImageView({ imageURL }: Props) {
+function RoundedProjectThumbnailView({ imageURL }: Props) {
   return (
-    <div className="rounded-md w-[128px] h-[72px] bg-gray-200 relative overflow-hidden">
+    <div className="rounded-lg w-[200px] h-[100px] bg-gray-200 relative">
       {imageURL && (
         <Image
           src={imageURL}
@@ -19,4 +19,4 @@ function RoundedRectImageView({ imageURL }: Props) {
   );
 }
 
-export default RoundedRectImageView;
+export default RoundedProjectThumbnailView;
