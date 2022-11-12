@@ -2,7 +2,7 @@ import { useState } from "react";
 import HighlightedText from "../atoms/HighlightedText";
 import ProjectDescBox from "../molecules/ProjectDescBox";
 import ExprienceDescBox from "../molecules/ExperienceDescBox";
-import BlogPostAnchorButton from "../molecules/BlogPostAnchorButton";
+import ReferencesAnchorButton from "../molecules/ReferencesAnchorButton";
 import experiences from "../../data/experiences.json";
 import classNames from "classnames";
 
@@ -92,7 +92,7 @@ export default function Experiences() {
             </div>
             <div className="references-container">
               {props.references?.map((reference, index) => (
-                <BlogPostAnchorButton
+                <ReferencesAnchorButton
                   key={`reference-${index}-${reference.title}`}
                   title={reference.title}
                   mainText={reference.mainText}
