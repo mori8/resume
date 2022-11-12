@@ -21,10 +21,10 @@ function ReferencesAnchorButton({
     <a href={href} target="_blank">
       <div
         className={ClassNames(
-          "w-full flex flex-row gap-4 rounded-xl px-4 py-5 items-center bg-[#F9FBFB] shadow shadow-slate-200 mb-4 transition-all cursor-pointer hover:shadow-lg hover:shadow-slate-200 hover:bg-slate-100",
+          "w-full flex flex-row gap-4 rounded-xl p-4 items-center bg-[#F9FBFB] shadow shadow-slate-200 mb-4 transition-all cursor-pointer hover:shadow-lg hover:shadow-slate-200 hover:bg-slate-100"
         )}
       >
-        <RoundedRectImageView imageURL={imageURL} type={type} />
+        {imageURL && <RoundedRectImageView imageURL={imageURL} type={type} size='sm' />}
         <div className="flex-1">
           <h5 className="font-bold mb-2 text-sm">{title}</h5>
           <p className="text-neutral-500 leading-normal whitespace-pre-wrap truncate line-clamp-2 w-full text-xs">
