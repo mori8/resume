@@ -20,16 +20,16 @@
       {
         "title": "바라던 바다 테스트",
         "subtitle": "Front-end/Back-end 개발, UI 디자인 및 질문지 일러스트 작업",
-        "description": "Big 5 성격검사를 기반으로 한, 총 사용자 수 약 5.1만 명의 심리테스트입니다. (GA 기준)\n사용자의 몰입을 위해 스토리라인에 따라 질문의 배경과 선택할 수 있는 응답지의 형태에 변주를 주었습니다.\n상태관리를 위해 Context API를 사용했으며, 몰입에 방해가 되지 않게 이미지는 모두 pre-loading해 화면이 깜빡이지 않도록 했습니다.\n시니어 개발자분들의 도움을 받아 AWS ELB와 S3를 통해 서비스를 배포했습니다.",
+        "description": "기획자 1분과 협업해 제작한 Big 5 성격검사를 기반으로 한, 총 사용자 수 약 5.1만 명의 심리테스트입니다. (GA 기준)\n사용자의 몰입을 위해 스토리라인에 따라 질문의 배경과 선택할 수 있는 응답지의 형태에 변주를 주었습니다.\n상태관리를 위해 Context API를 사용했으며, 몰입에 방해가 되지 않게 이미지는 모두 pre-loading해 화면이 깜빡이지 않도록 했습니다.\n시니어 개발자분들의 도움을 받아 AWS ELB와 S3를 통해 서비스를 배포했습니다.",
         "period": "2022.04 - 2022.06",
-        "techstack": ["React", "fastAPI", "TypeScript", "AWS", "MySQL"]
+        "techstack": ["React", "fastAPI", "TypeScript", "MySQL", "AWS"]
       },
       {
         "title": "굿라이프랩 공식 웹사이트",
         "subtitle": "Front-end 개발, 배포 및 UI 디자인",
-        "description": "Big 5 성격검사를 기반으로 한, 총 사용자 수 약 5.1만 명의 심리테스트입니다. (GA 기준)\n사용자의 몰입을 위해 스토리라인에 따라 질문의 배경과 선택할 수 있는 응답지의 형태에 변주를 주었습니다.\n상태관리를 위해 Context API를 사용했으며, 몰입에 방해가 되지 않게 이미지는 모두 pre-loading해 화면이 깜빡이지 않도록 했습니다.\n시니어 개발자분들의 도움을 받아 AWS ELB와 S3를 통해 서비스를 배포했습니다.",
+        "description": "다른 프론트엔드 개발자 1분, 기획자 1분과 협업해 굿라이프랩의 공식 웹사이트를 제작했습니다. 협업을 위해 GitHub Flow 방식을 사용했고 Heroku를 통해 배포했으며, 이 프로젝트를 통해 버전 관리 방법을 배웠습니다.",
         "period": "2022.02 - 2022.03",
-        "techstack": ["React", "TypeScript"]
+        "techstack": ["React", "TypeScript", "Heroku", "Sass"]
       }
     ],
     "references": []

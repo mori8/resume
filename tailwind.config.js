@@ -19,6 +19,8 @@ module.exports = {
         "typescript": "#3178C6",
         "mysql": "#4479A1",
         "aws": "#232F3E",
+        "heroku": "#430098",
+        "sass": "#CC6699",
       },
     },
   },
