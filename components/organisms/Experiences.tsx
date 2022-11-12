@@ -6,40 +6,6 @@ import ReferencesAnchorButton from "../molecules/ReferencesAnchorButton";
 import experiences from "../../data/experiences.json";
 import classNames from "classnames";
 
-interface ExperienceProps {
-  started: string;
-  ended: string;
-  title: string;
-  subtitle: string | null;
-  description: string;
-  logoURL: string;
-  logoWidth: number | null;
-  logoHeight: number | null;
-  link: string;
-  projects: projectProps[];
-  references: referenceProps[] | undefined;
-}
-
-interface ExperiencePropsWithIndex extends ExperienceProps {
-  index: number;
-}
-
-interface projectProps {
-  title: string;
-  subtitle?: string;
-  description: string;
-  period: string;
-  techstack?: string[];
-}
-
-interface referenceProps {
-  title: string;
-  mainText: string;
-  imageURL: string;
-  href: string;
-  type: string;
-}
-
 export default function Experiences() {
   const Experience = (props: ExperiencePropsWithIndex) => {
     const {
@@ -109,7 +75,7 @@ export default function Experiences() {
   };
 
   return (
-    <section>
+    <section className="section-experiences">
       <HighlightedText
         backgroundSize="sm"
         className="text-xl tracking-wider mb-12"
