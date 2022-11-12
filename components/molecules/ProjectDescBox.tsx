@@ -15,9 +15,9 @@ export default function ProjectDescBox(props: IProjectDescBoxProps) {
   return (
     <div className="ml-6 my-10">
       <div className="flex flex-row justify-between mb-3">
-        <div className="flex flex-row">
+        <div className="flex flex-row items-center">
           <DecoratedText className="font-bold text-lg">{title}</DecoratedText>
-          <div className="ml-4 flex flex-row gap-2">
+          <div className="ml-3 flex flex-row gap-2">
             {techStack?.map((tech, index) => (
               <TechStackBadge tech={tech} key={"tech_" + index + "_" + tech} />
             ))}

@@ -17,6 +17,7 @@ module.exports = {
         "fastAPI": "#009688",
         "tailwind": "#38B2AC",
         "typescript": "#3178C6",
+        "mysql": "#4479A1",
         "aws": "#232F3E",
       },
     },
