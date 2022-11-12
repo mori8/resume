@@ -9,7 +9,7 @@ export interface ITechStackBadgeProps {
 export default function TechStackBadge (props: ITechStackBadgeProps) {
   const { tech } = props;
   return (
-    <div className={classNames('w-fit h-fit flex flex-row text-[10px] items-center rounded-lg rounded-bl-none px-[10px] py-[2px]', {
+    <div className={classNames('w-fit h-fit flex flex-row text-[10px] items-center rounded-lg rounded-bl-none px-[8px] py-[2px]', {
       'bg-react': tech === 'React',
       'bg-fastAPI text-white': tech === 'fastAPI',
       'bg-aws text-white': tech === 'AWS',

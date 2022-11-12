@@ -3,16 +3,17 @@ import Image from "next/image";
 
 export interface IExprienceDescBoxProps {
   title: string;
-  subtitle?: string;
+  subtitle: string | null;
   description: string;
   logoURL: string;
-  logoWidth?: number;
-  logoHeight?: number;
+  logoWidth: number | null;
+  logoHeight: number | null;
   link: string;
 }
 
 export default function ExprienceDescBox(props: IExprienceDescBoxProps) {
-  const { title, subtitle, description, logoURL, logoWidth = 64, logoHeight = 64, link } = props;
+  const { title, subtitle, description, logoURL, logoWidth, logoHeight, link } = props;
+
   return (
     <div className="flex flex-row justify-between relative timeline">
       <div>
@@ -23,7 +24,7 @@ export default function ExprienceDescBox(props: IExprienceDescBoxProps) {
         <p className="text-sm mt-4 text-gray-600 whitespace-pre-wrap leading-6">{description}</p>
       </div>
       <div>
-        <Image src={logoURL} alt="company logo" width={logoWidth} height={logoHeight} />
+        <Image src={logoURL} alt="company logo" width={logoWidth ?? 64} height={logoHeight ?? 64} />
       </div>
     </div>
   );
