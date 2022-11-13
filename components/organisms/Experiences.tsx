@@ -77,8 +77,8 @@ export default function Experiences() {
   return (
     <section className="section-experiences">
       <HighlightedText
-        backgroundSize="sm"
-        className="text-xl tracking-wider mb-12"
+        backgroundSize="none"
+        className="text-2xl tracking-wider mb-12"
       >
         Experiences
       </HighlightedText>

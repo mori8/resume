@@ -18,6 +18,7 @@ export default function HighlightedText(props: IHighlightedTextProps) {
           "after:h-7 after:-mt-7": backgroundSize === "xl",
           "after:h-4 after:-mt-4": backgroundSize === "base",
           "after:h-3 after:-mt-3": backgroundSize === "sm",
+          "after:w-0": backgroundSize === "none",
           "after:ml-2": props.leftBias,
         },
         className

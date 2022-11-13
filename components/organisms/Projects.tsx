@@ -79,7 +79,7 @@ export default function Projects() {
         backgroundSize="none"
         className="text-2xl tracking-wider"
       >
-        Projects
+        Personal Projects
       </HighlightedText>
       <div className="flex flex-col gap-4 mt-8">
         {projects.map((project, index) => (

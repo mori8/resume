@@ -7,7 +7,7 @@ export default function Title(props: ITitleProps) {
   return (
     <div>
       <h1 className="text-5xl font-bold leading-tight">
-        <HighlightedText backgroundSize='xl'>Wow Thing</HighlightedText> is
+        <HighlightedText backgroundSize='xl' leftBias>Wow Thing</HighlightedText> is
         <br />
         All We Need :P
       </h1>
