@@ -16,7 +16,7 @@ function RoundedRectImageView({
   return (
     <div className={classNames("rounded-md bg-gray-200 relative overflow-hidden", {
       "w-[128px] h-[76px]": size === 'sm',
-      "w-[228px] h-[120px]": size === 'lg',
+      "w-[232px] h-[132px]": size === 'lg',
     })}>
       {type === "youtube" && (
         <div className="w-6 h-6 absolute top-1/2 left-1/2 z-10 -translate-x-1/2 -translate-y-1/2">

@@ -1,0 +1,90 @@
+[
+    {
+      "title": "NotiNote",
+      "info": "Front-end 개발 및 디자인 | 총 4명 | 기여도 25%",
+      "imageURL": "/images/project-notinote.webp",
+      "period": "2022.02 - 2022.06",
+      "description": "다문화가정 부모를 위한 가정통신문 자동 번역 및 학사일정 관리 서비스\nGoogle Developers에서 주최하는 국제대회인 2022 Solution Challenge에서 Global Top 50 Semi Finalist로 선정",
+      "techstack": ["React Native", "TypeScript", "fastAPI", "Expo"],
+      "roles": [
+        "앱 첫 실행 시 보여주는 인트로 화면 및 홈 화면 디자인 및 구현",
+        "사용자가 저장한 가정통신문 검색 기능과 검색 화면 디자인 및 구현",
+        "1개 이상의 행사 정보가 담긴 가정통신문 텍스트 데이터로부터 학교 행사와 해당 행사의 날짜를 추출하는 알고리즘 구현",
+        "HuggingFace Accelerated Inference API 사용을 위한 FastAPI 서버 구축 및 Heroku 배포"
+      ],
+      "references": [
+        {
+          "title": "NotiNote의 2022 Solution Challenge Global Top 50 진출기 - (1)",
+          "mainText": "2편이 너무 늦은 점 죄송합니다. 한때 파워블로거가 꿈이었는데 이정도 업데이트 속도라면 빠르게 꿈을 접길 잘했네요. 2편에서는 Top 50 세미 파이널 진출 이후부터 Top 10 결과 발표까지의 이야기를 다룹니다. 솔루션 챌린지가 무슨 대회인지 궁금하신 분들은 아래 '더보기' 클릭 고고",
+          "imageURL": "/images/project-notinote.webp",
+          "href": "https://cocosy.tistory.com/84",
+          "type": "blog"
+        },
+        {
+          "title": "NotiNote의 2022 Solution Challenge Global Top 50 진출기 - (2)",
+          "mainText": "이 글은 (1)과 (2)로 나누어집니다. 🤨 잠깐, Solution Challenge가 무엇인가요? 2022 Solution Challenge | Google Developers Solve for one or more of the United Nations 17 Sustainable Development Goals using Google technology.",
+          "imageURL": "/images/project-notinote-2.webp",
+          "href": "https://cocosy.tistory.com/85",
+          "type": "blog"
+        },
+        {
+          "title": "[Top 50] NotiNote - 2022 Solution Challenge",
+          "mainText": "NotiNote is a specialized app service that helps multicultural parents easily manage their children's school schedules by translating school newsletter and adding automatically detected school events to the calendar.",
+          "imageURL": "/images/youtube-notinote.webp",
+          "href": "https://www.youtube.com/watch?v=1F9g3U792G8",
+          "type": "youtube"
+        }
+      ]
+    },
+    {
+      "title": "Q-omics",
+      "info": "개발 및 속도 개선 | 총 3명 | 기여도 40%",
+      "imageURL": "/images/project-qomics.webp",
+      "period": "2021.07",
+      "description": "숙명여자대학교 생명시스템학부 생명정보학연구실에서 학부 인턴으로 활동할 때 3명이 함께 진행한 프로젝트로, 암세포의 돌연변이 종류와 유전자 발현, RNAi 등과 환자 생존 데이터 사이의 연관관계를 계산하여 그래프와 수치로 보여주는 소프트웨어",
+      "techstack": ["C++"],
+      "roles": [
+        "Python PyQT 기반 소프트웨어의 속도 개선을 위해 내부 계산 로직을 CPython으로 작성 및 모듈화",
+        "C++로 생존 데이터 전처리와 Kaplan-Meier 그래프 관련 연산(기준에 따른 집단 분리, 생존율, AUC, p-value 계산) 및 계산 속도 개선",
+        "Boost Libraries를 사용해 전체 파이프라인 수행에 소요되는 시간을 기존 18초에서 8초 대로 개선하고, 데이터를 쉽게 처리하기 위해서 Xtensor 도입"
+      ],
+      "references": []
+    },
+    {
+      "title": "눈송이 유형 테스트",
+      "info": "개발 및 디자인 | 총 4명 | 기여도 25%",
+      "imageURL": "/images/project-noonsongtest.webp",
+      "period": "2021.02",
+      "description": "2021 DSC KR Hackathon에 학부생 4인으로 구성된 ‘Gitribute’ 팀으로 출전하여 만든 서비스로, 숙명여대의 마스코트인 눈송이를 통해 내가 어떤 유형의 숙명여대 학생인지 분석해보는 사이트",
+      "techstack": ["React", "styled-components"],
+      "roles": [
+        "UI 디자인",
+        "fetch API를 통해 Django 서버와 통신하여 방명록 기능 구현",
+        "메인 화면 및 팝업 Modal과 반응형 UI 구현"
+      ],
+      "references": [
+        {
+          "title": "[Solution Challenge 2021] 5. DSC KR Hackathon",
+          "mainText": "2021 DSC KR Hackathon에 참여하여 2021.02.01부터 2021.02.06일까지 6일 간 개발을 했다. 프로젝트 소개 프로젝트 이름: ❄눈송이 유형 테스트❄ 프로젝트 소개: 숙명여대의 마스코트인 눈송이를 통해 내가 어떤 유형의 대학생인지 분석해보는 프로젝트 프로젝트 형태: 사이드 프로젝트",
+          "imageURL": "/images/project-noonsongtest.webp",
+          "href": "https://dsc-sookmyung.tistory.com/68",
+          "type": "blog"
+        }
+      ]
+    },
+    {
+      "title": "Mazassumnida",
+      "info": "개발 및 디자인 | 총 3명 | 기여도 80%",
+      "imageURL": "/images/project-mazassumnida.webp",
+      "period": "2020.08",
+      "description": "정보과학 알고리즘 트레이닝 사이트인 Baekjoon Online Judge의 유저 정보를 svg 뱃지 형식으로 보여주는 GitHub Readme Decoration API 서비스. GitHub 내에서 6천 명 이상의 유저가 사용 중",
+      "techstack": ["Django", "Heroku"],
+      "roles": [
+        "4가지 테마의 SVG 뱃지 디자인",
+        "Django에서 Query String으로 전달받은 username으로 solved.ac API서버에 유저 정보를 요청하여 받아온 정보를 바탕으로 XML을 작성하여 SVG 뱃지 생성",
+        "첫 버전인 V1에 이어 V2와 mini, pastel 버전 개발 및 유지보수"
+      ],
+      "references": []
+    }
+  ]
+  

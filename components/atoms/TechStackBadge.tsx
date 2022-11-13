@@ -23,6 +23,9 @@ export default function TechStackBadge(props: ITechStackBadgeProps) {
           "bg-[#CC6699] text-white": tech === "Sass",
           "bg-black text-white": tech === "Nextjs",
           "bg-[#000020] text-white": tech === "Expo",
+          "bg-[#00599C] text-white": tech === "C++",
+          "bg-[#092E20] text-white": tech === "Django",
+          "bg-[#DB7093] text-white": tech === "styled-components",
         }
       )}
     >
