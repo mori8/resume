@@ -34,10 +34,11 @@ interface referenceProps {
 
 interface ProjectsProps {
   title: string;
-  subtitle: string;
+  info: string;
+  imageURL: string;
   description: string;
   period: string;
   techstack: string[];
-  role: string[];
-  references: string[];
+  roles: string[];
+  references: referenceProps[] | undefined;
 }

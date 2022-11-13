@@ -12,7 +12,7 @@ export default function DecoreatedList(props: IDecoreatedListProps) {
   return (
     <div
       className={classNames(
-        "flex flex-row items-center relative leading-none",
+        "flex flex-row items-center relative leading-none tracking-wide",
         className
       )}
     >
