@@ -10,13 +10,12 @@ module.exports = {
         suit: ["SUIT", "sans-serif"],
       },
       colors: {
-        "desire": "#e13e56",
-        "haze": "#F6F9F8",
-        "celeste": "#bcfdf7",
+        desire: "#e13e56",
+        haze: "#F6FAFF",
+        celeste: "#bcfdf7",
+        turquoise: "#41C9DC",
       },
     },
   },
-  plugins: [
-    require('@tailwindcss/line-clamp'),
-  ],
+  plugins: [require("@tailwindcss/line-clamp")],
 };
