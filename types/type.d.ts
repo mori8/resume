@@ -4,12 +4,8 @@ interface ExperienceProps {
   title: string;
   subtitle: string | null;
   description: string;
-  logoURL: string;
-  logoWidth: number | null;
-  logoHeight: number | null;
   link: string;
   projects: projectProps[];
-  references: referenceProps[] | undefined;
 }
 
 interface ExperiencePropsWithIndex extends ExperienceProps {
@@ -18,10 +14,9 @@ interface ExperiencePropsWithIndex extends ExperienceProps {
 
 interface projectProps {
   title: string;
-  subtitle?: string;
-  description: string;
-  period: string;
-  techstack?: string[];
+  techstack: string[];
+  description: string[];
+  screenshots: string[];
 }
 
 interface referenceProps {

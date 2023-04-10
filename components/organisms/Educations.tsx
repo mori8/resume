@@ -9,7 +9,7 @@ export default function Educations() {
     <section className="section-educations">
       <HighlightedText
         backgroundSize="none"
-        className="text-2xl tracking-wider mb-12"
+        className="text-2xl mb-12"
       >
         Educations
       </HighlightedText>

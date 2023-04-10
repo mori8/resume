@@ -1,0 +1,76 @@
+[
+    {
+      "title": "새라[Sae:ra]",
+      "imageURL": "/images/project-saera.webp",
+      "period": "JAN 2023 - MAR 2023",
+      "description": "북한이탈주민의 남한 표준 억양 및 발음 학습을 위한 애플리케이션으로 북한과 남한의 언어적 차이를 위주로 컨텐츠를 구성했으며, 사용자의 억양을 그래프로 시각화하여 억양의 차이를 직관적으로 이해하고 학습할 수 있게 함",
+      "myRoles": "ML Backend(FastAPI), 기획, UI/UX 디자인",
+      "teamMembers": "4명(Flutter 2 / Spring 1 / ML Backend 1)",
+      "contributions": "35%",
+      "responsibilities": [
+        "ML 모델 사용과 문장 간 유사도 계산, 데이터 가공 등을 위한 Python 서버 (FastAPI) 개발",
+        "음성이 담긴 오디오 파일에서 음정을 분석하는 SPICE 모델을 사용해 억양 그래프를 추출하고 가공하여 리턴하는 API와, 문장을 벡터화하여 검색 키워드와 관련된 학습 문장을 추천해주는 Similarity Search API 구현",
+        "시계열 데이터의 유사도를 비교하는 방법을 조사하고 테스트하며, 가장 직관적이었던 DTW 알고리즘으로 억양 유사도 점수 계산 기능 구현",
+        "보안을 위해 매 통신 시 스프링 서버와 Access-Token을 통해 인증",
+        "더 나은 사용자 경험을 위해 컴포넌트 배치와 형태에 통일감을 주고, 애니메이션이나 알림음 등의 유저 피드백을 적극적으로 활용한 UI를 디자인"
+      ],
+      "references": []
+    },
+    {
+      "title": "NotiNote",
+      "imageURL": "/images/project-notinote.webp",
+      "period": "JAN 2022 - MAR 2022, MAY 2022",
+      "description": "다문화가정 학부모를 위한 가정통신문 번역 및 학사일정 관리 애플리케이션<br/>Google Developers가 주최하는 2022 Solution Challenge에서 Global Top 50 Semi-Finalist로 선정. Google Developers 공식 유튜브에 소개되기도 함",
+      "myRoles": "Frontend(React Native), ML Backend(FastAPI), UI 디자인",
+      "teamMembers": "4명(React Native 1.5 / Spring 2 / ML Backend 0.5)",
+      "contributions": "25%",
+      "responsibilities": [
+        "인트로 화면과 홈 화면, 검색 화면 디자인 및 구현",
+        "사용자가 저장한 가정통신문 검색 및 필터링 기능 구현",
+        "1개 이상의 행사 정보가 담긴 가정통신문 텍스트 데이터로부터 학교 행사와 해당 행사의 날짜를 추출하는 알고리즘 구현 - 후에 ML로 대체",
+        "HuggingFace Accelerated Inference API 사용을 위한 FastAPI 서버 구축 및 Heroku 배포",
+        "Googler의 멘토링 피드백을 반영한 UX 개선 및 QA ML 모델을 도입해 날짜-이벤트 매칭 기능의 한계 개선(이벤트 추출 성능 평가 결과 정확도 84.6%)"
+      ],
+      "references": [
+        {
+          "title": "NotiNote의 2022 Solution Challenge Global Top 50 진출기 - (1)",
+          "mainText": "2편이 너무 늦은 점 죄송합니다. 한때 파워블로거가 꿈이었는데 이정도 업데이트 속도라면 빠르게 꿈을 접길 잘했네요. 2편에서는 Top 50 세미 파이널 진출 이후부터 Top 10 결과 발표까지의 이야기를 다룹니다. 솔루션 챌린지가 무슨 대회인지 궁금하신 분들은 아래 '더보기' 클릭 고고",
+          "imageURL": "/images/project-notinote.webp",
+          "href": "https://cocosy.tistory.com/84",
+          "type": "blog"
+        },
+        {
+          "title": "NotiNote의 2022 Solution Challenge Global Top 50 진출기 - (2)",
+          "mainText": "이 글은 (1)과 (2)로 나누어집니다. 🤨 잠깐, Solution Challenge가 무엇인가요? 2022 Solution Challenge | Google Developers Solve for one or more of the United Nations 17 Sustainable Development Goals using Google technology.",
+          "imageURL": "/images/project-notinote-2.webp",
+          "href": "https://cocosy.tistory.com/85",
+          "type": "blog"
+        },
+        {
+          "title": "[Top 50] NotiNote - 2022 Solution Challenge",
+          "mainText": "NotiNote is a specialized app service that helps multicultural parents easily manage their children's school schedules by translating school newsletter and adding automatically detected school events to the calendar.",
+          "imageURL": "/images/youtube-notinote.webp",
+          "href": "https://www.youtube.com/watch?v=1F9g3U792G8",
+          "type": "youtube"
+        }
+      ]
+    },
+    {
+      "title": "Mazassumnida",
+      "imageURL": "/images/project-mazassumnida.webp",
+      "period": "JUL 2020",
+      "description": "다문화가정 학부모를 위한 가정통신문 번역 및 학사일정 관리 애플리케이션<br/>Google Developers가 주최하는 2022 Solution Challenge에서 Global Top 50 Semi-Finalist로 선정. Google Developers 공식 유튜브에 소개되기도 함",
+      "myRoles": "API 개발 및 디자인",
+      "teamMembers": "2명(Django, Design 1 / SVG Animation 1)",
+      "contributions": "80%",
+      "responsibilities": [
+        "인트로 화면과 홈 화면, 검색 화면 디자인 및 구현",
+        "사용자가 저장한 가정통신문 검색 및 필터링 기능 구현",
+        "1개 이상의 행사 정보가 담긴 가정통신문 텍스트 데이터로부터 학교 행사와 해당 행사의 날짜를 추출하는 알고리즘 구현 - 후에 ML로 대체",
+        "HuggingFace Accelerated Inference API 사용을 위한 FastAPI 서버 구축 및 Heroku 배포",
+        "Googler의 멘토링 피드백을 반영한 UX 개선 및 QA ML 모델을 도입해 날짜-이벤트 매칭 기능의 한계 개선(이벤트 추출 성능 평가 결과 정확도 84.6%)"
+      ],
+      "references": []
+    }
+  ]
+  

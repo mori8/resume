@@ -15,60 +15,41 @@ export default function Experiences() {
       title,
       subtitle,
       description,
-      logoURL,
-      logoWidth,
-      logoHeight,
       link,
       projects,
     } = props;
     return (
-      <div className="flex flex-row justify-between gap-10">
-        <div className="mr-4 text-desire font-bold leading-relaxed lg:w-20">
-          {started} -
-          <br />
-          {ended}
+      <div className="flex flex-col">
+        <div className="flex flex-row gap-8">
+          <h3 className="text-xl font-bold">{title}</h3>
+          <h5 className="text-xl">{subtitle}</h5>
         </div>
-        <div className="pl-10 border-l-2 border-l-gray-200 flex-1">
-          <div
-            className={classNames("pb-20 flex flex-col gap-6", {
-              "pb-0": index === experiences.length - 1,
-            })}
-          >
-            <ExprienceDescBox
-              key={`$experience_${index}`}
-              title={title}
-              subtitle={subtitle}
-              description={description}
-              logoURL={logoURL}
-              logoWidth={logoWidth}
-              logoHeight={logoHeight}
-              link={link}
-            />
-            <div className="project-container">
-              {projects.map((project, index) => (
-                <ProjectDescBox
-                  key={`project-${index}-${project.title}`}
-                  title={project.title}
-                  subtitle={project.subtitle}
-                  description={project.description}
-                  period={project.period}
-                  techStack={project.techstack}
-                />
-              ))}
-            </div>
-            <div className="references-container">
-              {props.references?.map((reference, index) => (
-                <ReferencesAnchorButton
-                  key={`reference-${index}-${reference.title}`}
-                  title={reference.title}
-                  mainText={reference.mainText}
-                  imageURL={reference.imageURL}
-                  href={reference.href}
-                  type={reference.type}
-                />
-              ))}
-            </div>
-          </div>
+        <div className="italic text-lg text-slate-700 mt-1">
+          <span className="">{started}</span> -{" "}
+          <span className="">{ended}</span>
+        </div>
+        <div className="mt-3">
+          <p className="">{description}</p>
+        </div>
+        <div className="">
+          {projects.map((project, project_index) => {
+            const { title, description, techstack, screenshots } = project;
+            return (
+              <div key={`exp_${index}_p${project_index}`} className="">
+                <h4 className="mt-4 font-semibold">{title}</h4>
+                <p className="text-slate-700">{techstack.join(", ")}</p>
+                <ul className="list-disc pl-6 mt-1">
+                  {description.map((desc, desc_index) => {
+                    return (
+                      <li key={`exp_${index}_p${project_index}_d${desc_index}`}>
+                        {desc}
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            );
+          })}
         </div>
       </div>
     );
@@ -76,11 +57,8 @@ export default function Experiences() {
 
   return (
     <section className="section-experiences">
-      <HighlightedText
-        backgroundSize="none"
-        className="text-2xl tracking-wider mb-12"
-      >
-        Experiences
+      <HighlightedText backgroundSize="none" className="text-2xl mb-8">
+        Work Experiences
       </HighlightedText>
       {experiences.map((experience, index) => (
         <Experience key={`exp_${index}`} {...experience} index={index} />

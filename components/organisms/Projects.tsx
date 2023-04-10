@@ -77,7 +77,7 @@ export default function Projects() {
     <section className="section-projects">
       <HighlightedText
         backgroundSize="none"
-        className="text-2xl tracking-wider"
+        className="text-2xl"
       >
         Personal Projects
       </HighlightedText>

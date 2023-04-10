@@ -94,12 +94,12 @@
     "info": "개발 및 디자인 | 총 3명 | 기여도 80%",
     "imageURL": "/images/project-mazassumnida.webp",
     "period": "2020.08",
-    "description": "정보과학 알고리즘 트레이닝 사이트인 Baekjoon Online Judge의 유저 정보를 svg 뱃지 형식으로 보여주는 GitHub Readme Decoration API 서비스. GitHub 내에서 6천 명 이상의 유저가 사용 중",
+    "description": "정보과학 알고리즘 트레이닝 사이트인 Baekjoon Online Judge의 유저 정보를 svg 뱃지 형식으로 보여주는 GitHub Readme Decoration API 서비스",
     "techstack": ["Django", "Heroku"],
     "roles": [
-      "4가지 테마의 SVG 뱃지 디자인",
       "Django에서 Query String으로 전달받은 username으로 solved.ac API서버에 유저 정보를 요청하여 받아온 정보를 바탕으로 XML을 작성하여 SVG 뱃지 생성",
-      "첫 버전인 V1에 이어 V2와 mini, pastel 버전 개발 및 유지보수"
+      "GitHub 내에서 8천 명 이상의 유저가 사용 중(code results 검색 결과)",
+      "첫 공개 이후 지속적으로 테마 업데이트 및 유지보수하며 사용자 수를 꾸준히 늘려가고 있음"
     ],
     "references": []
   }
