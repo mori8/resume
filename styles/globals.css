@@ -6,8 +6,5 @@ body {
   font-family: 'Helvetica Neue', 'Pretendard', sans-serif;
   word-break: keep-all;
   background-color: #F6FAFF;
-}
-
-.timeline {
-  @apply before:content-[''] before:absolute before:w-4 before:h-4 before:bg-desire before:rounded-full before:-left-[41px] before:border-[5px] before:border-gray-200 before:-translate-x-1/2 ;
+  line-height: 1.8rem;
 }

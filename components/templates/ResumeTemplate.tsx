@@ -13,7 +13,7 @@ export default function ResumeTemplate(props: IResumeTemplateProps) {
       <>
         <ResumeHeader />
       </>
-      <main className="flex flex-col gap-32">
+      <main className="flex flex-col gap-32 mt-24">
         <Experiences />
         <Projects />
         <Educations />

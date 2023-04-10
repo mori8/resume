@@ -1,43 +1,41 @@
 import * as React from "react";
-import ProfileWithBlobs from "../molecules/ProfileWithBlobs";
-import DecoreatedText from "../atoms/DecoratedText";
-import Title from "../molecules/Title";
-import {
-  EnvelopeIcon,
-  CodeBracketSquareIcon,
-  GlobeAsiaAustraliaIcon,
-} from "@heroicons/react/24/outline";
+import Image from "next/image";
+import Contacts from "../atoms/Contacts";
 
 export interface IResumeHeaderProps {}
 
 export default function ResumeHeader(props: IResumeHeaderProps) {
   return (
-    <header className="flex flex-row justify-between items-center mb-8">
-      <div className="flex-1">
-        <Title />
-        <h3 className="font-bold text-lg mt-4 mb-6">
-          Software Engineer 남수연입니다.
-        </h3>
-        <ul className="">
-          <DecoreatedText className="my-[10px] text-gray-700 text-sm">
-            <EnvelopeIcon className="h-4 w-4 mr-1 text-gray-500" />
-            <a href="mailto:kaithape@gmail.com" target="_blank">
-              kaithape@gmail.com
-            </a>
-          </DecoreatedText>
-          <DecoreatedText className="my-[10px] text-gray-700 text-sm">
-            <CodeBracketSquareIcon className="h-4 w-4 mr-1 text-gray-500" />
-            <a href="https://github.com/mori8" target="_blank">
-              github.com/mori8
-            </a>
-          </DecoreatedText>
-          <DecoreatedText className="my-[10px] text-gray-700 text-sm">
-            <GlobeAsiaAustraliaIcon className="h-4 w-4 mr-1 text-gray-500" />
-            <a href="https://cocosy.tistory.com" target="_blank">cocosy.tistory.com</a>
-          </DecoreatedText>
-        </ul>
+    <header className="flex flex-row justify-between">
+      <div className="flex-[3] relative">
+        <Image
+          src="/images/profile.jpg"
+          alt="profile"
+          width={260}
+          height={260}
+        />
+        <div className="absolute z-100 h-[22rem] w-[22rem] -top-44 -left-72">
+          <Image
+            src="/images/big-flower.svg"
+            alt="profile"
+            layout="fill"
+            objectFit="cover"
+          />
+        </div>
       </div>
-      <ProfileWithBlobs />
+      <div className="flex-[3] font-bold text-3xl -ml-44 z-10">
+      심미적인 것을 추구하는<br/>
+      직감의 근거를 고민하는<br/>
+        한 번 빠지면 끝을 보는<br /><br />
+        소프트웨어 엔지니어<br />
+        남수연입니다.
+      </div>
+      <div className="flex-[2] flex flex-col gap-1">
+        <Contacts contactType="Email" contactValue="kaithape@gmail.com" link="mailto:kaithape@gmail.com" />
+        <Contacts contactType="Github" contactValue="github.com/mori8" link="https://github.com/mori8" />
+        <Contacts contactType="Dev Blog" contactValue="cocosy.tistory.com" link="https://cocosy.tistory.com" />
+        <Contacts contactType="LinkedIn" contactValue="suyeon-nam" link="https://www.linkedin.com/in/suyeon-nam-2b65881aa/" />
+      </div>
     </header>
   );
 }
