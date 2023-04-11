@@ -36,9 +36,9 @@ export default function Experiences() {
             const { title, description, techstack, screenshots } = project;
             return (
               <div key={`exp_${index}_p${project_index}`} className="">
-                <h4 className="mt-4 font-semibold">{title}</h4>
+                <h4 className="mt-5 font-semibold">{title}</h4>
                 <p className="text-slate-700">{techstack.join(", ")}</p>
-                <ul className="list-disc pl-6 mt-1">
+                <ul className="list-disc pl-6 mt-2">
                   {description.map((desc, desc_index) => {
                     return (
                       <li key={`exp_${index}_p${project_index}_d${desc_index}`}>
