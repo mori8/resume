@@ -24,7 +24,7 @@ export default function Experiences() {
           <h3 className="text-xl font-bold">{title}</h3>
           <h5 className="text-xl">{subtitle}</h5>
         </div>
-        <div className="italic text-lg text-slate-700 mt-1">
+        <div className="period mt-1">
           <span className="">{started}</span> -{" "}
           <span className="">{ended}</span>
         </div>
@@ -37,7 +37,7 @@ export default function Experiences() {
             return (
               <div key={`exp_${index}_p${project_index}`} className="">
                 <h4 className="mt-5 font-semibold">{title}</h4>
-                <p className="text-slate-700">{techstack.join(", ")}</p>
+                <p className="text-slate-600">{techstack.join(", ")}</p>
                 <ul className="list-disc pl-6 mt-2">
                   {description.map((desc, desc_index) => {
                     return (

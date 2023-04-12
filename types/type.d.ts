@@ -29,11 +29,12 @@ interface referenceProps {
 
 interface ProjectsProps {
   title: string;
-  info: string;
   imageURL: string;
-  description: string;
   period: string;
-  techstack: string[];
-  roles: string[];
+  description: string;
+  myRoles: string,
+  teamMembers: string,
+  contributions: string,
+  responsibilities: string[];
   references: referenceProps[] | undefined;
 }

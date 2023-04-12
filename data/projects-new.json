@@ -59,16 +59,14 @@
       "title": "Mazassumnida",
       "imageURL": "/images/project-mazassumnida.webp",
       "period": "JUL 2020",
-      "description": "다문화가정 학부모를 위한 가정통신문 번역 및 학사일정 관리 애플리케이션<br/>Google Developers가 주최하는 2022 Solution Challenge에서 Global Top 50 Semi-Finalist로 선정. Google Developers 공식 유튜브에 소개되기도 함",
+      "description": "정보과학 알고리즘 트레이닝 사이트인 Baekjoon Online Judge의 유저 정보를 svg 뱃지 형식으로 보여주는 Github Readme Decoration API 서비스",
       "myRoles": "API 개발 및 디자인",
       "teamMembers": "2명(Django, Design 1 / SVG Animation 1)",
-      "contributions": "80%",
+      "contributions": "90%",
       "responsibilities": [
-        "인트로 화면과 홈 화면, 검색 화면 디자인 및 구현",
-        "사용자가 저장한 가정통신문 검색 및 필터링 기능 구현",
-        "1개 이상의 행사 정보가 담긴 가정통신문 텍스트 데이터로부터 학교 행사와 해당 행사의 날짜를 추출하는 알고리즘 구현 - 후에 ML로 대체",
-        "HuggingFace Accelerated Inference API 사용을 위한 FastAPI 서버 구축 및 Heroku 배포",
-        "Googler의 멘토링 피드백을 반영한 UX 개선 및 QA ML 모델을 도입해 날짜-이벤트 매칭 기능의 한계 개선(이벤트 추출 성능 평가 결과 정확도 84.6%)"
+        "Django에서 Query String으로 전달받은 username으로 solved.ac API서버에 유저 정보를 요청하여 받아온 정보를 바탕으로 XML을 작성하여 SVG 뱃지 생성",
+        "GitHub 내에서 8천 명 이상의 유저가 사용 중(code results 검색 결과)",
+        "첫 공개 이후 지속적으로 테마 업데이트 및 유지보수하며 사용자 수를 꾸준히 늘려가고 있음"
       ],
       "references": []
     }

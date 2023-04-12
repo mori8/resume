@@ -1,12 +1,13 @@
 [
   {
     "title": "새라[Sae:ra]",
-    "info": "개발 및 디자인 | 총 4명 | 기여도 35%",
     "imageURL": "/images/project-saera.webp",
-    "period": "2023.01 - 2023.03",
+    "period": "JAN 2023 - MAR 2023",
     "description": "북한이탈주민의 남한 표준 억양 및 발음 학습을 위한 애플리케이션으로 북한과 남한의 언어적 차이를 위주로 컨텐츠를 구성했으며, 사용자의 억양을 그래프로 시각화하여 억양의 차이를 직관적으로 이해하고 학습할 수 있게 함",
-    "techstack": ["fastAPI", "Tensorflow", "GCP"],
-    "roles": [
+    "myRoles": "ML Backend(FastAPI), 기획, UI/UX 디자인",
+    "teamMembers": "4명(Flutter 2 / Spring 1 / ML Backend 1)",
+    "contributions": "35%",
+    "responsibilities": [
       "ML 모델 사용과 문장 간 유사도 계산, 데이터 가공 등을 위한 Python 서버 (FastAPI) 개발",
       "음성이 담긴 오디오 파일에서 음정을 분석하는 SPICE 모델을 사용해 억양 그래프를 추출하고 가공하여 리턴하는 API와, 문장을 벡터화하여 검색 키워드와 관련된 학습 문장을 추천해주는 Similarity Search API 구현",
       "시계열 데이터의 유사도를 비교하는 방법을 조사하고 테스트하며, 가장 직관적이었던 DTW 알고리즘으로 억양 유사도 점수 계산 기능 구현",
@@ -17,17 +18,18 @@
   },
   {
     "title": "NotiNote",
-    "info": "Front-end 개발 및 디자인 | 총 4명 | 기여도 25%",
     "imageURL": "/images/project-notinote.webp",
-    "period": "2022.02 - 2022.06",
-    "description": "다문화가정 부모를 위한 가정통신문 자동 번역 및 학사일정 관리 서비스\nGoogle Developers에서 주최하는 국제대회인 2022 Solution Challenge에서 Global Top 50 Semi Finalist로 선정",
-    "techstack": ["React Native", "Expo", "TypeScript", "fastAPI"],
-    "roles": [
+    "period": "JAN 2022 - MAR 2022, MAY 2022",
+    "description": "다문화가정 학부모를 위한 가정통신문 번역 및 학사일정 관리 애플리케이션. Google Developers가 주최하는 2022 Solution Challenge에서 Global Top 50 Semi-Finalist로 선정. Google Developers 공식 유튜브에 소개됨",
+    "myRoles": "Frontend(React Native), ML Backend(FastAPI), 디자인",
+    "teamMembers": "4명(React Native 1.5 / Spring 2 / ML Backend 0.5)",
+    "contributions": "25%",
+    "responsibilities": [
       "인트로 화면과 홈 화면, 검색 화면 디자인 및 구현",
-      "사용자가 저장한 가정통신문 검색 및 필터링 구현",
-      "1개 이상의 행사 정보가 담긴 가정통신문 텍스트 데이터로부터 학교 행사와 해당 행사의 날짜를 추출하는 알고리즘 구현",
+      "사용자가 저장한 가정통신문 검색 및 필터링 기능 구현",
+      "1개 이상의 행사 정보가 담긴 가정통신문 텍스트 데이터로부터 학교 행사와 해당 행사의 날짜를 추출하는 알고리즘 구현 - 후에 ML로 대체",
       "HuggingFace Accelerated Inference API 사용을 위한 FastAPI 서버 구축 및 Heroku 배포",
-      "Googler의 멘토링 피드백을 반영한 UX 개선 및 QA ML 모델을 도입해 구조가 복잡한 가정통신문에서의 날짜-이벤트 추출 기능의 한계 개선(이벤트 추출 성능 평가 결과 정확도 84.6%)"
+      "Googler의 멘토링 피드백을 반영한 UX 개선 및 QA ML 모델을 도입해 날짜-이벤트 매칭 기능의 한계 개선(이벤트 추출 성능 평가 결과 정확도 84.6%)"
     ],
     "references": [
       {
@@ -54,49 +56,14 @@
     ]
   },
   {
-    "title": "Q-omics",
-    "info": "개발 및 속도 개선 | 총 3명 | 기여도 40%",
-    "imageURL": "/images/project-qomics.webp",
-    "period": "2021.07",
-    "description": "숙명여자대학교 생명시스템학부 생명정보학연구실에서 학부 인턴으로 활동할 때 3명이 함께 진행한 프로젝트로, 암세포의 돌연변이 종류와 유전자 발현, RNAi 등과 환자 생존 데이터 사이의 연관관계를 계산하여 그래프와 수치로 보여주는 소프트웨어",
-    "techstack": ["C++"],
-    "roles": [
-      "Python PyQT 기반 소프트웨어의 속도 개선을 위해 내부 계산 로직을 CPython으로 작성 및 모듈화",
-      "C++로 생존 데이터 전처리와 Kaplan-Meier 그래프 관련 연산(기준에 따른 집단 분리, 생존율, AUC, p-value 계산) 및 계산 속도 개선",
-      "Boost Libraries를 사용해 전체 파이프라인 수행에 소요되는 시간을 기존 18초에서 8초 대로 개선하고, 데이터를 쉽게 처리하기 위해서 Xtensor 도입"
-    ],
-    "references": []
-  },
-  {
-    "title": "눈송이 유형 테스트",
-    "info": "개발 및 디자인 | 총 4명 | 기여도 25%",
-    "imageURL": "/images/project-noonsongtest.webp",
-    "period": "2021.02",
-    "description": "2021 DSC KR Hackathon에 학부생 4인으로 구성된 ‘Gitribute’ 팀으로 출전하여 만든 서비스로, 숙명여대의 마스코트인 눈송이를 통해 내가 어떤 유형의 숙명여대 학생인지 분석해보는 사이트",
-    "techstack": ["React", "styled-components"],
-    "roles": [
-      "UI 디자인",
-      "fetch API를 통해 Django 서버와 통신하여 방명록 기능 구현",
-      "메인 화면 및 팝업 Modal과 반응형 UI 구현"
-    ],
-    "references": [
-      {
-        "title": "[Solution Challenge 2021] 5. DSC KR Hackathon",
-        "mainText": "2021 DSC KR Hackathon에 참여하여 2021.02.01부터 2021.02.06일까지 6일 간 개발을 했다. 프로젝트 소개 프로젝트 이름: ❄눈송이 유형 테스트❄ 프로젝트 소개: 숙명여대의 마스코트인 눈송이를 통해 내가 어떤 유형의 대학생인지 분석해보는 프로젝트 프로젝트 형태: 사이드 프로젝트",
-        "imageURL": "/images/project-noonsongtest.webp",
-        "href": "https://dsc-sookmyung.tistory.com/68",
-        "type": "blog"
-      }
-    ]
-  },
-  {
     "title": "Mazassumnida",
-    "info": "개발 및 디자인 | 총 3명 | 기여도 80%",
     "imageURL": "/images/project-mazassumnida.webp",
-    "period": "2020.08",
-    "description": "정보과학 알고리즘 트레이닝 사이트인 Baekjoon Online Judge의 유저 정보를 svg 뱃지 형식으로 보여주는 GitHub Readme Decoration API 서비스",
-    "techstack": ["Django", "Heroku"],
-    "roles": [
+    "period": "JUL 2020",
+    "description": "정보과학 알고리즘 트레이닝 사이트인 Baekjoon Online Judge의 유저 정보를 svg 뱃지 형식으로 보여주는 Github Readme Decoration API 서비스",
+    "myRoles": "API 개발 및 디자인",
+    "teamMembers": "2명(Django, Design 1 / SVG Animation 1)",
+    "contributions": "90%",
+    "responsibilities": [
       "Django에서 Query String으로 전달받은 username으로 solved.ac API서버에 유저 정보를 요청하여 받아온 정보를 바탕으로 XML을 작성하여 SVG 뱃지 생성",
       "GitHub 내에서 8천 명 이상의 유저가 사용 중(code results 검색 결과)",
       "첫 공개 이후 지속적으로 테마 업데이트 및 유지보수하며 사용자 수를 꾸준히 늘려가고 있음"
