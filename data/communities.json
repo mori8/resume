@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Google Developer Student Clubs",
+    "position": "21-22 Lead",
+    "period": "AUG 2021 - JUL 2022",
+    "description": "Google의 캠퍼스 기반 대학생 개발자 커뮤니티 중 하나로 전세계에서 1800개 이상의 대학 챕터가 활동중이며, 21-22 시즌의 숙명여대 챕터 리드를 맡아 활동함",
+    "details": [
+      "교내 알고리즘 학회인 Algos와 협업하여 제1회(2021), 제2회(2022) 숙명여자대학교 프로그래밍 경진대회 개최",
+      "10분 기술 세미나, Dev Talk w. Core Team, 눈송이 익명 고민방, Homecoming Day, GDSC Career Session, 21-22 GDSC KR Winter Hack 등의 단독 및 GSDC KR 연합 행사 기획 및 진행",
+      "2022 Solution Challenge에서 ‘NotiNote’ 프로젝트로 Global Top 50 Semi-Finalist로 선정",
+      "리드로서 매주 스크림 진행과 팀블로그 운영, 경험자 초청 세미나 등으로 멤버들이 Solution Challenge에 완성도 있는 프로젝트를 낼 수 있도록 도와 21-22 GDSC Sookmyung이 GDSC 사상 최초로 Global Top 50에 4팀, Top 10 Finalist에 1팀의 이름을 올림",
+      "21-22 GDSC 우수 리드로 선정"
+    ]
+  },
+  {
+    "title": "ICPC Sinchon",
+    "position": "Organizer",
+    "period": "JUL 2020 - AUG 2021",
+    "description": "서강대학교, 숙명여자대학교, 연세대학교, 이화여자대학교, 연세대학교 알고리즘 학회 연합에서 숙명여대 대표 총괄진으로 활동함",
+    "details": [
+      "2021 Winter, 2021 Summer 신촌지역 대학교 연합 프로그래밍 대회(SUAPC) 및 Camp Contest 관리",
+      "2021 Winter, 2021 Summer 연합 알고리즘 캠프 기획, 운영(출석 확인, 만족도 조사, 멘토 모집 및 관리 등)",
+      "구 공식 홈페이지 디자인 및 개발 참여(old.suapc.kr)"
+    ]
+  }
+]
