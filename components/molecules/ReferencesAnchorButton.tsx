@@ -21,7 +21,7 @@ function ReferencesAnchorButton({
     <a href={href} target="_blank">
       <div
         className={ClassNames(
-          "w-full flex flex-row gap-4 items-center bg-slate-100 mb-4 transition-all cursor-pointer hover:shadow-lg hover:shadow-slate-200 hover:bg-slate-100"
+          "w-full flex flex-row gap-4 items-center bg-gray-100 mb-4 transition-all cursor-pointer hover:shadow-lg hover:shadow-gray-200 hover:bg-gray-100"
         )}
       >
         {imageURL && (

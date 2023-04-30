@@ -20,7 +20,7 @@ export default function Experiences() {
     } = props;
     return (
       <div className="flex flex-col">
-        <div className="flex flex-row gap-8">
+        <div className="flex flex-row gap-4">
           <h3 className="text-xl font-bold">{title}</h3>
           <h5 className="text-xl">{subtitle}</h5>
         </div>
@@ -31,14 +31,14 @@ export default function Experiences() {
         <div className="mt-3">
           <p className="">{description}</p>
         </div>
-        <div className="">
+        <div className="flex flex-col gap-2">
           {projects.map((project, project_index) => {
             const { title, description, techstack, screenshots } = project;
             return (
               <div key={`exp_${index}_p${project_index}`} className="">
                 <h4 className="mt-5 font-semibold">{title}</h4>
-                <p className="text-slate-600">{techstack.join(", ")}</p>
-                <ul className="list-disc pl-6 mt-2">
+                <p className="text-gray-600">{techstack.join(", ")}</p>
+                <ul className="ul-disc">
                   {description.map((desc, desc_index) => {
                     return (
                       <li key={`exp_${index}_p${project_index}_d${desc_index}`}>
@@ -57,7 +57,7 @@ export default function Experiences() {
 
   return (
     <section className="section-experiences">
-      <HighlightedText backgroundSize="none" className="text-2xl mb-8">
+      <HighlightedText backgroundSize="none" className="text-2xl mb-10">
         Work Experiences
       </HighlightedText>
       {experiences.map((experience, index) => (
