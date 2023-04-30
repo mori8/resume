@@ -12,6 +12,20 @@ interface ExperiencePropsWithIndex extends ExperienceProps {
   index: number;
 }
 
+interface CommunityProps {
+  title: string;
+  position: string;
+  description: string;
+  started: string;
+  ended: string;
+  details: string[];
+  link: string;
+}
+
+interface CommunityPropsWithIndex extends CommunityProps {
+  index: number;
+}
+
 interface projectProps {
   title: string;
   techstack: string[];

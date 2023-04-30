@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 body {
-  font-family: 'Helvetica Neue', 'Pretendard', sans-serif;
+  font-family: "Helvetica Neue", "Pretendard", sans-serif;
   word-break: keep-all;
-  background-color: #F6FAFF;
+  background-color: #f6faff;
   line-height: 1.8rem;
 }
 
@@ -19,4 +19,8 @@ body {
 
 .project-desc-detail-wrapper:last-child {
   @apply pb-0;
+}
+
+.ul-disc {
+  @apply list-disc list-inside mt-2 px-4 text-gray-800;
 }
