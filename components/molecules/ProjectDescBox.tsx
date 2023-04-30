@@ -13,7 +13,7 @@ export interface IProjectDescBoxProps {
 export default function ProjectDescBox(props: IProjectDescBoxProps) {
   const { title, subtitle, description, period, techStack } = props;
   return (
-    <div className="rounded-lg hover:bg-slate-100 px-6 py-7 transition-all cursor-pointer">
+    <div className="hover:bg-slate-100 px-6 py-7 transition-all cursor-pointer">
       <div className="flex flex-row justify-between mb-2">
         <div className="flex flex-row items-center">
           <DecoratedText className="font-bold text-lg">{title}</DecoratedText>

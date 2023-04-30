@@ -16,6 +16,7 @@ function ThumbnailView({
   return (
     <div className={classNames("bg-gray-200 relative overflow-hidden", {
       "w-[128px] h-[76px]": size === 'sm',
+      "w-[200px] h-[112px]": size === 'md',
       "w-[400px] h-[225px]": size === 'lg',
     })}>
       {type === "youtube" && (
