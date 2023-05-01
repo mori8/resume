@@ -14,6 +14,7 @@
       "보안을 위해 매 통신 시 스프링 서버와 Access-Token을 통해 인증",
       "더 나은 사용자 경험을 위해 컴포넌트 배치와 형태에 통일감을 주고, 애니메이션이나 알림음 등의 유저 피드백을 적극적으로 활용한 UI를 디자인"
     ],
+    "link": "https://github.com/YeonJeans",
     "references": []
   },
   {
@@ -31,6 +32,7 @@
       "HuggingFace Accelerated Inference API 사용을 위한 FastAPI 서버 구축 및 Heroku 배포",
       "Googler의 멘토링 피드백을 반영한 UX 개선 및 QA ML 모델을 도입해 날짜-이벤트 매칭 기능의 한계 개선(이벤트 추출 성능 평가 결과 정확도 84.6%)"
     ],
+    "link": "https://github.com/dsc-sookmyung/2022-Answer-SolutionChallenge",
     "references": [
       {
         "title": "NotiNote의 2022 Solution Challenge Global Top 50 진출기 - (1)",
@@ -68,6 +70,7 @@
       "GitHub 내에서 8천 명 이상의 유저가 사용 중(code results 검색 결과)",
       "첫 공개 이후 지속적으로 테마 업데이트 및 유지보수하며 사용자 수를 꾸준히 늘려가고 있음"
     ],
+    "link": "https://github.com/mazassumnida/mazassumnida",
     "references": []
   }
 ]

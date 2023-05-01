@@ -50,5 +50,6 @@ interface ProjectsProps {
   teamMembers: string,
   contributions: string,
   responsibilities: string[];
+  link: string,
   references: referenceProps[] | undefined;
 }

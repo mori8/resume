@@ -26,6 +26,7 @@ export default function Projects() {
       teamMembers,
       contributions,
       responsibilities,
+      link,
       references,
       index,
     } = props;
@@ -44,7 +45,9 @@ export default function Projects() {
           </div>
           <div className="flex flex-col justify-between">
             <div className="flex-1">
-              <h5 className="mb-2 font-bold text-xl leading-none">{title}</h5>
+              <a href={link} target="_blank" className="hover:underline">
+                <h5 className="mb-2 font-bold text-xl leading-none">{title}</h5>
+              </a>
               <div className="period mb-2">
                 <span>{period}</span>
               </div>
