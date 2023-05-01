@@ -10,24 +10,29 @@ export default function Educations() {
       <HighlightedText backgroundSize="none" className="text-2xl mb-10">
         Educations
       </HighlightedText>
-      <div className="educations-container flex flex-row gap-10">
-        <div className="w-28 h-32 relative">
-          <Image src={educations.logoURL} alt={educations.univ} layout="fill" />
-        </div>
-        <div className="flex-1 flex flex-col gap-4">
-          <DecoreatedList className="text-xl font-bold">
-            {educations.univ}
-            <span className="text-gray-400 font-thin">
-              , {educations.location}
+      <div className="flex-1 flex flex-col gap-2">
+        <div>
+          <div className="flex flex-row gap-4">
+            <h3 className="text-xl font-bold">{educations.univ}</h3>
+            <h5 className="text-xl">{educations.major}</h5>
+          </div>
+          <div className="flex flex-row gap-3">
+            <span>
+              GPA <b>{educations.totalGrade}</b>
             </span>
-          </DecoreatedList>
-          <p className="ml-4 text-gray-800 leading-relaxed">
-            {educations.major} - {educations.status} <br />
-            전공평점 <b>{educations.majorGrade}</b> | 전체평점{" "}
-            <b>{educations.totalGrade}</b>
-          </p>
-          <p className="note ml-4 text-sm text-gray-600">{educations.note}</p>
+            <span>
+              MAJOR GPA <b>{educations.majorGrade}</b>
+            </span>
+          </div>
+          <div>
+            <span className="period">{educations.period}</span>
+          </div>
         </div>
+        <ul className="text-gray-600 ul-disc">
+          {educations.details.map((detail, index) => (
+            <li key={`education_${index}`}>{detail}</li>
+          ))}
+        </ul>
       </div>
     </section>
   );

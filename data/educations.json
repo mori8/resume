@@ -1,11 +1,14 @@
 {
   "univ": "숙명여자대학교",
-  "logoURL": "/images/sookmyung-logo.webp",
   "location": "서울",
-  "major": "소프트웨어학부 컴퓨터과학전공 19학번",
-  "status": "7학기 재학중",
-  "majorGrade": "4.24/4.3",
-  "totalGrade": "4.2/4.3",
-  "note": "국가우수장학금 이공계열(재학중우수자) 수혜자",
+  "major": "Computer Science",
+  "period": "MAR 2019 - PRESENT",
+  "majorGrade": "4.24 / 4.3",
+  "totalGrade": "4.2 / 4.3",
+  "details": [
+    "국가우수장학금 이공계 재학중우수자(2년 전액)",
+    "학부 성적 최우등상(수석) 1회, 우등상 1회(차석)",
+    "알고리즘 학회 Algos 10기 학회원, 프로그래밍 중앙동아리 SOLUX 25기 부회장"
+  ],
   "grades": [4.05, 4.2, 4.25, 4.3, 4.2]
 }
