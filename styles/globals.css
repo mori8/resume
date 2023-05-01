@@ -10,7 +10,7 @@ body {
 }
 
 .period {
-  @apply italic text-lg font-light;
+  @apply italic font-light;
 }
 
 .project-desc-detail-wrapper {

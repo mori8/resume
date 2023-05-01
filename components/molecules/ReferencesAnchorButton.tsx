@@ -27,7 +27,7 @@ function ReferencesAnchorButton({
         {imageURL && (
           <ThumbnailView imageURL={imageURL} type={type} size="md" />
         )}
-        <div className="flex-1">
+        <div className="flex-1 pr-4">
           <h5 className="font-bold mb-2 text-sm">{title}</h5>
           <p className="text-neutral-500 leading-normal whitespace-pre-wrap truncate line-clamp-2 w-full text-xs">
             {mainText}
