@@ -11,7 +11,7 @@ export interface IResumeTemplateProps {}
 
 export default function ResumeTemplate(props: IResumeTemplateProps) {
   return (
-    <div className="w-1/2 max-w-[72rem] min-w-[60rem] mx-auto h-full px-8 py-20">
+    <div className="w-1/2 max-w-[72rem] min-w-[60rem] mx-auto h-full px-8 pt-20 pb-64">
       <>
         <ResumeHeader />
       </>
