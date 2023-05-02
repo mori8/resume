@@ -65,7 +65,7 @@ export default function Projects() {
         <div className="mt-6 project-desc-wrapper bg-white">
           <button
             onClick={() => ChangeIsExpanded(index)}
-            className="font-bold underline px-6 py-2"
+            className="font-bold underline px-6 py-2 w-full text-left"
           >
             {isExpanded[index] ? "▲ 접기" : "▼ 더보기"}
           </button>
