@@ -9,7 +9,7 @@ export default function ResumeHeader(props: IResumeHeaderProps) {
     <header className="flex flex-row justify-between">
       <div className="flex-[3] relative">
         <Image
-          src="/images/profile.jpg"
+          src="/images/profile.webp"
           alt="profile"
           width={260}
           height={260}
