@@ -22,5 +22,5 @@ body {
 }
 
 .ul-disc {
-  @apply list-disc list-inside mt-2 px-4 text-gray-800;
+  @apply mt-2 pr-4 text-gray-800 leading-relaxed flex flex-col gap-1;
 }

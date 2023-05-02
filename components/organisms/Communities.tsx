@@ -1,5 +1,6 @@
 import React from "react";
 import HighlightedText from "../atoms/HighlightedText";
+import CustomLi from "../atoms/CustomLi";
 import communities from "../../data/communities.json";
 
 export default function Communities() {
@@ -29,7 +30,7 @@ export default function Communities() {
         </div>
         <ul className="ul-disc">
           {details.map((detail, detail_index) => (
-            <li key={`community_${index}_d${detail_index}`}>{detail}</li>
+            <CustomLi key={`community_${index}_d${detail_index}`}>{detail}</CustomLi>
           ))}
         </ul>
       </div>

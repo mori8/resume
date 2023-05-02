@@ -1,8 +1,6 @@
 import { useState } from "react";
 import HighlightedText from "../atoms/HighlightedText";
-import ProjectDescBox from "../molecules/ProjectDescBox";
-import ExprienceDescBox from "../molecules/ExperienceDescBox";
-import ReferencesAnchorButton from "../molecules/ReferencesAnchorButton";
+import CustomLi from "../atoms/CustomLi";
 import experiences from "../../data/experiences.json";
 import classNames from "classnames";
 
@@ -41,9 +39,9 @@ export default function Experiences() {
                 <ul className="ul-disc">
                   {description.map((desc, desc_index) => {
                     return (
-                      <li key={`exp_${index}_p${project_index}_d${desc_index}`}>
+                      <CustomLi key={`exp_${index}_p${project_index}_d${desc_index}`}>
                         {desc}
-                      </li>
+                      </CustomLi>
                     );
                   })}
                 </ul>

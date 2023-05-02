@@ -1,7 +1,6 @@
 import * as React from "react";
 import HighlightedText from "../atoms/HighlightedText";
-import DecoreatedList from "../atoms/DecoratedText";
-import Image from "next/image";
+import CustomLi from "../atoms/CustomLi";
 import educations from "../../data/educations.json";
 
 export default function Educations() {
@@ -30,7 +29,7 @@ export default function Educations() {
         </div>
         <ul className="text-gray-600 ul-disc">
           {educations.details.map((detail, index) => (
-            <li key={`education_${index}`}>{detail}</li>
+            <CustomLi key={`education_${index}`}>{detail}</CustomLi>
           ))}
         </ul>
       </div>
