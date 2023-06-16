@@ -18,7 +18,7 @@ function ThumbnailView({ imageURL, type, size = "sm" }: Props) {
       })}
     >
       {type === "youtube" && (
-        <div className="w-6 h-6 absolute top-1/2 left-1/2 z-10 -trangray-x-1/2 -trangray-y-1/2">
+        <div className="w-6 h-6 absolute top-1/2 left-1/2 z-10 -translate-x-1/2 -translate-y-1/2">
           <Image
             src="/images/youtube-play-button.svg"
             alt="youtube play button"
