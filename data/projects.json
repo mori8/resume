@@ -3,7 +3,7 @@
     "title": "새라[Sae:ra]",
     "imageURL": "/images/project-saera.webp",
     "period": "JAN 2023 - MAR 2023",
-    "description": "북한이탈주민의 남한 표준 억양 및 발음 학습을 위한 애플리케이션으로 북한과 남한의 언어적 차이를 위주로 컨텐츠를 구성했으며, 사용자의 억양을 그래프로 시각화하여 억양의 차이를 직관적으로 이해하고 학습할 수 있게 함",
+    "description": "북한이탈주민의 남한 표준 억양 및 발음 학습을 위한 애플리케이션으로 북한과 남한의 언어적 차이를 위주로 컨텐츠를 구성했으며, 사용자의 억양을 그래프로 시각화하여 억양의 차이를 직관적으로 이해하고 학습할 수 있게 함. Google Developers가 주최하는 2023 Solution Challenge에서 Global Top 100 Semi-Finalist로 선정.",
     "myRoles": "ML Backend(FastAPI), 기획, UI/UX 디자인",
     "teamMembers": "4명(Flutter 2 / Spring 1 / ML Backend 1)",
     "contributions": "35%",
@@ -15,7 +15,15 @@
       "더 나은 사용자 경험을 위해 컴포넌트 배치와 형태에 통일감을 주고, 애니메이션이나 알림음 등의 유저 피드백을 적극적으로 활용한 UI를 디자인"
     ],
     "link": "https://github.com/YeonJeans",
-    "references": []
+    "references": [
+      {
+        "title": "Saera - GDSC Solution Challenge 2023",
+        "mainText": "Saera(새라) is a pronunciation & intonation Learning application for North Korean defectors in South Korea. We built our project with Google technologies like Flutter and GCP, and visualize intonation through models in Tensorflow Hub.",
+        "imageURL": "/images/project-saera.webp",
+        "href": "https://www.youtube.com/watch?v=zmuxz9bldj4",
+        "type": "youtube"
+      }
+    ]
   },
   {
     "title": "NotiNote",
