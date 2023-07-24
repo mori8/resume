@@ -55,3 +55,9 @@ interface ProjectsProps {
   link: string,
   references: referenceProps[] | undefined;
 }
+
+declare global {
+  interface Window {
+    gtag: string;
+  }
+}
