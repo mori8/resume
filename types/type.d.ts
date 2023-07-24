@@ -1,3 +1,5 @@
+declare module 'gtag.js';
+
 interface ExperienceProps {
   started: string;
   ended: string;
