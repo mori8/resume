@@ -1,7 +1,7 @@
 import React from "react";
 import HighlightedText from "../atoms/HighlightedText";
 import CustomLi from "../atoms/CustomLi";
-import communities from "../../data/communities.json";
+
 
 export default function Communities() {
   const Community = (props: CommunityPropsWithIndex) => {

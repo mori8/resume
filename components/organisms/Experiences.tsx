@@ -1,10 +1,27 @@
 import { useState } from "react";
 import HighlightedText from "../atoms/HighlightedText";
 import CustomLi from "../atoms/CustomLi";
-import experiences from "../../data/experiences.json";
 import classNames from "classnames";
 
-export default function Experiences() {
+interface ExperienceProps {
+  json: {
+    title: string;
+    subtitle: string;
+    started: string;
+    ended: string;
+    description: string;
+    link: string;
+    projects: {
+      title: string;
+      description: string[];
+      techstack: string[];
+      screenshots: string[];
+    }[];
+ }
+}
+
+export default function Experiences({ json }: ExperienceProps) {
+
   const Experience = (props: ExperiencePropsWithIndex) => {
     const {
       index,
@@ -52,6 +69,7 @@ export default function Experiences() {
       </div>
     );
   };
+  
 
   return (
     <section className="section-experiences">

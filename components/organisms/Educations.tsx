@@ -1,9 +1,19 @@
 import * as React from "react";
 import HighlightedText from "../atoms/HighlightedText";
 import CustomLi from "../atoms/CustomLi";
-import educations from "../../data/educations.json";
 
-export default function Educations() {
+interface EducationProps {
+  json: {
+    univ: string;
+    major: string;
+    totalGrade: string;
+    majorGrade: string;
+    period: string;
+    details: string[];
+  };
+}
+
+export default function Educations({ json }: EducationProps) {
   return (
     <section className="section-educations">
       <HighlightedText backgroundSize="none" className="text-2xl mb-10">

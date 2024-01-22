@@ -4,10 +4,30 @@ import HighlightedText from "../atoms/HighlightedText";
 import ProjectInfo from "../atoms/ProjectInfo";
 import ThumbnailView from "../atoms/ThumbnailView";
 import ReferencesAnchorButton from "../molecules/ReferencesAnchorButton";
-import projects from "../../data/projects.json";
 import classNames from "classnames";
 
-export default function Projects() {
+interface ProjectsProps {
+  json: {
+    title: string;
+    imageURL: string;
+    description: string;
+    period: string;
+    myRoles: string;
+    teamMembers: string;
+    contributions: string;
+    responsibilities: string[];
+    link: string;
+    references: {
+      title: string;
+      mainText: string;
+      imageURL: string;
+      href: string;
+      type: string;
+    }[];
+  };
+}
+
+export default function Projects({ json }: ProjectsProps) {
   const [isExpanded, setIsExpanded] = useState(
     Array(projects.length).fill(false)
   );

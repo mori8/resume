@@ -1,14 +1,16 @@
-{
-  "univ": "숙명여자대학교",
-  "location": "서울",
-  "major": "Computer Science",
-  "period": "MAR 2019 - PRESENT",
-  "majorGrade": "4.25 / 4.3",
-  "totalGrade": "4.22 / 4.3",
-  "details": [
-    "국가우수장학금 이공계 재학중우수자(2년 전액)",
-    "학부 성적 최우등상(수석) 1회, 우등상 1회(차석)",
-    "알고리즘 학회 Algos 10기 학회원, 프로그래밍 중앙동아리 SOLUX 25기 부회장"
-  ],
-  "grades": [4.05, 4.2, 4.25, 4.3, 4.2]
-}
+[
+  {
+    "univ": "KAIST(한국과학기술원)",
+    "location": "대전",
+    "course": "Industrial Design, Master's course",
+    "period": "MAR 2023 - PRESENT",
+    "icon": ""
+  },  
+  {
+    "univ": "숙명여자대학교",
+    "location": "서울",
+    "course": "Computer Science, B.Tech",
+    "period": "MAR 2019 - FEB 2023",
+    "icon": ""
+  }  
+]
