@@ -1,63 +1,54 @@
-declare module 'gtag.js';
-
-interface ExperienceProps {
-  started: string;
-  ended: string;
-  title: string;
-  subtitle: string | null;
-  description: string;
-  link: string;
-  projects: projectProps[];
-}
-
-interface ExperiencePropsWithIndex extends ExperienceProps {
-  index: number;
-}
-
-interface CommunityProps {
-  title: string;
-  position: string;
-  description: string;
-  started: string;
-  ended: string;
-  details: string[];
-  link: string;
-}
-
-interface CommunityPropsWithIndex extends CommunityProps {
-  index: number;
-}
-
-interface projectProps {
-  title: string;
-  techstack: string[];
-  description: string[];
-  screenshots: string[];
-}
-
-interface referenceProps {
-  title: string;
-  mainText: string;
-  imageURL: string;
-  href: string;
-  type: string;
-}
-
-interface ProjectsProps {
-  title: string;
-  imageURL: string;
-  period: string;
-  description: string;
-  myRoles: string,
-  teamMembers: string,
-  contributions: string,
-  responsibilities: string[];
-  link: string,
-  references: referenceProps[] | undefined;
-}
+import { IconType } from "react-icons";
+declare module "gtag.js";
 
 declare global {
   interface Window {
     gtag: string;
   }
+}
+
+interface Community {
+  title: string;
+  position: string;
+  started: string;
+  ended: string;
+  description: string;
+  icon: string;
+}
+
+interface Education {
+  univ: string;
+  location: string;
+  course: string;
+  period: string;
+  icon: string;
+}
+
+interface Experience {
+  started: string;
+  ended: string;
+  title: string;
+  subtitle: string;
+  description: string;
+  link: string;
+  projects: ProjectDetails[];
+}
+
+interface ProjectDetails {
+  title: string;
+  techstack: string[];
+  description: string[];
+}
+
+interface Project {
+  title: string;
+  imageURL: string;
+  period: string;
+  description: string;
+  myRoles: string;
+  responsibilities: string[];
+  link: {
+    name: string;
+    url: string;
+  }[];
 }
