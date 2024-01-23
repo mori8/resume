@@ -3,36 +3,18 @@ import HighlightedText from "../atoms/HighlightedText";
 import CustomLi from "../atoms/CustomLi";
 import classNames from "classnames";
 
-interface ExperienceProps {
-  json: {
-    title: string;
-    subtitle: string;
-    started: string;
-    ended: string;
-    description: string;
-    link: string;
-    projects: {
-      title: string;
-      description: string[];
-      techstack: string[];
-      screenshots: string[];
-    }[];
- }
-}
-
-export default function Experiences({ json }: ExperienceProps) {
-
-  const Experience = (props: ExperiencePropsWithIndex) => {
-    const {
-      index,
-      started,
-      ended,
-      title,
-      subtitle,
-      description,
-      link,
-      projects,
-    } = props;
+export default function Experiences({
+  experiences,
+}: {
+  experiences: Experience[];
+}) {
+  const Experience = (
+    props: Experience & {
+      index: number;
+    }
+  ) => {
+    const { title, subtitle, started, ended, description, projects, index } =
+      props;
     return (
       <div className="flex flex-col">
         <div className="flex flex-row gap-4">
@@ -48,7 +30,7 @@ export default function Experiences({ json }: ExperienceProps) {
         </div>
         <div className="flex flex-col gap-2">
           {projects.map((project, project_index) => {
-            const { title, description, techstack, screenshots } = project;
+            const { title, description, techstack } = project;
             return (
               <div key={`exp_${index}_p${project_index}`} className="">
                 <h4 className="mt-5 font-semibold">{title}</h4>
@@ -56,7 +38,9 @@ export default function Experiences({ json }: ExperienceProps) {
                 <ul className="ul-disc">
                   {description.map((desc, desc_index) => {
                     return (
-                      <CustomLi key={`exp_${index}_p${project_index}_d${desc_index}`}>
+                      <CustomLi
+                        key={`exp_${index}_p${project_index}_d${desc_index}`}
+                      >
                         {desc}
                       </CustomLi>
                     );
@@ -69,7 +53,6 @@ export default function Experiences({ json }: ExperienceProps) {
       </div>
     );
   };
-  
 
   return (
     <section className="section-experiences">

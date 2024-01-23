@@ -1,20 +1,17 @@
 import React from "react";
 import HighlightedText from "../atoms/HighlightedText";
-import CustomLi from "../atoms/CustomLi";
 
-
-export default function Communities() {
-  const Community = (props: CommunityPropsWithIndex) => {
-    const {
-      index,
-      title,
-      position,
-      description,
-      started,
-      ended,
-      details,
-      link,
-    } = props;
+export default function Communities({
+  communities,
+}: {
+  communities: Community[];
+}) {
+  const Community = (
+    props: Community & {
+      index: number;
+    }
+  ) => {
+    const { title, position, started, ended, description, index } = props;
     return (
       <div className="flex flex-col">
         <div className="flex flex-row gap-4">
@@ -28,11 +25,6 @@ export default function Communities() {
         <div className="mt-3">
           <p className="">{description}</p>
         </div>
-        <ul className="ul-disc">
-          {details.map((detail, detail_index) => (
-            <CustomLi key={`community_${index}_d${detail_index}`}>{detail}</CustomLi>
-          ))}
-        </ul>
       </div>
     );
   };

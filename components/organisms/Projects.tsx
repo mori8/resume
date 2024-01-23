@@ -1,61 +1,15 @@
 import * as React from "react";
 import { useState } from "react";
 import HighlightedText from "../atoms/HighlightedText";
-import ProjectInfo from "../atoms/ProjectInfo";
 import ThumbnailView from "../atoms/ThumbnailView";
-import ReferencesAnchorButton from "../molecules/ReferencesAnchorButton";
-import classNames from "classnames";
 
-interface ProjectsProps {
-  json: {
-    title: string;
-    imageURL: string;
-    description: string;
-    period: string;
-    myRoles: string;
-    teamMembers: string;
-    contributions: string;
-    responsibilities: string[];
-    link: string;
-    references: {
-      title: string;
-      mainText: string;
-      imageURL: string;
-      href: string;
-      type: string;
-    }[];
-  };
-}
-
-export default function Projects({ json }: ProjectsProps) {
-  const [isExpanded, setIsExpanded] = useState(
-    Array(projects.length).fill(false)
-  );
-
+export default function Projects({ projects }: { projects: Project[] }) {
   const Project = (
-    props: ProjectsProps & {
+    props: Project & {
       index: number;
     }
   ) => {
-    const {
-      title,
-      imageURL,
-      description,
-      period,
-      myRoles,
-      teamMembers,
-      contributions,
-      responsibilities,
-      link,
-      references,
-      index,
-    } = props;
-
-    const ChangeIsExpanded = (index: number) => {
-      const newIsExpanded = [...isExpanded];
-      newIsExpanded[index] = !newIsExpanded[index];
-      setIsExpanded(newIsExpanded);
-    };
+    const { title, period, description, link, imageURL, index } = props;
 
     return (
       <div className="project-container">
@@ -65,9 +19,18 @@ export default function Projects({ json }: ProjectsProps) {
           </div>
           <div className="flex flex-col justify-between">
             <div className="flex-1">
-              <a href={link} target="_blank" className="hover:underline">
-                <h5 className="mb-2 font-bold text-xl leading-none">{title}</h5>
-              </a>
+              {link.map((link, index) => (
+                <a
+                  href={link.url}
+                  target="_blank"
+                  className="hover:underline"
+                  key={index}
+                >
+                  <h5 className="mb-2 font-bold text-xl leading-none">
+                    {title}
+                  </h5>
+                </a>
+              ))}
               <div className="period mb-2">
                 <span>{period}</span>
               </div>
@@ -75,52 +38,6 @@ export default function Projects({ json }: ProjectsProps) {
                 {description}
               </p>
             </div>
-            <div className="text-sm flex flex-col gap-1">
-              <ProjectInfo type="맡은 역할" value={myRoles} />
-              <ProjectInfo type="참여 인원" value={teamMembers} />
-              <ProjectInfo type="기여도" value={contributions} />
-            </div>
-          </div>
-        </div>
-        <div className="mt-6 project-desc-wrapper bg-white">
-          <button
-            onClick={() => ChangeIsExpanded(index)}
-            className="font-bold underline px-6 py-2 w-full text-left"
-          >
-            {isExpanded[index] ? "▲ 접기" : "▼ 더보기"}
-          </button>
-          <div
-            className={classNames("px-6 pb-6", {
-              hidden: !isExpanded[index],
-            })}
-          >
-            <div className="project-desc-detail-wrapper">
-              <h4 className="font-bold mb-3">Key Responsibilities</h4>
-              <ul className="list-inside text-sm text-gray-600 leading-5">
-                {responsibilities.map((role, index) => (
-                  <li key={"role_" + index + "_" + role} className="mb-2">
-                    {role}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            {props.references?.length !== 0 && (
-              <div className="project-desc-detail-wrapper">
-                <h4 className="font-bold mb-3">References</h4>
-                <div className="references-container mt-2">
-                  {props.references?.map((reference, index) => (
-                    <ReferencesAnchorButton
-                      key={`reference-${index}-${reference.title}`}
-                      title={reference.title}
-                      mainText={reference.mainText}
-                      imageURL={reference.imageURL}
-                      href={reference.href}
-                      type={reference.type}
-                    />
-                  ))}
-                </div>
-              </div>
-            )}
           </div>
         </div>
       </div>

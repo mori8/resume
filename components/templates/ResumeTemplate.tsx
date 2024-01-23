@@ -37,10 +37,10 @@ export default function ResumeTemplate(props: IResumeTemplateProps) {
       </>
       <main className="flex flex-col gap-32 mt-24">
         {/* TODO: 여기서 props로 json 전달 */}
-        <Experiences json={experiences} />
-        <Projects json={projects} />
-        <Communities json={communities} />
-        <Educations json={educations} />
+        <Experiences experiences={experiences} />
+        <Projects projects={projects} />
+        <Communities communities={communities} />
+        <Educations educations={educations} />
       </main>
       <>
         <ResumeFooter />
