@@ -1,4 +1,3 @@
-import { IconType } from "react-icons";
 declare module "gtag.js";
 
 declare global {
