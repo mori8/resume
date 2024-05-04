@@ -12,7 +12,7 @@ export interface IResumeTemplateProps {}
 
 export default function ResumeTemplate(props: IResumeTemplateProps) {
   return (
-    <div className="w-1/2 max-w-[72rem] min-w-[60rem] mx-auto h-full px-8 pt-20 relative">
+    <div className="w-1/2 max-w-[72rem] min-w-[66rem] mx-auto h-full px-8 pt-20 relative">
       <a href="/Suyeon-Nam-Resume.pdf" download>
         <RoundedButtonWithHoverMessage
           description="PDF로 다운로드"

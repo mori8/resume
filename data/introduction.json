@@ -1,12 +1,13 @@
 {
   "name": "남수연",
   "englishName": "Suyeon Nam",
-  "contact": {
-    "email": "kaithape@gmail.com",
-    "github": "https://github.com/mori8",
-    "blog": "https://cocosy.tistory.com",
-    "linkedin": "https://www.linkedin.com/in/suyeon-nam-2b65881aa/"
-  },
+  "profileImage": "/images/profile-black.png",
+  "contacts": [
+    {"type": "email", "content": "kaithape@gmail.com", "link": "mailto:kaithape@gmail.com"},
+    {"type": "github", "content": "github.com/mori8", "link": "https://github.com/mori8"},
+    {"type": "blog", "content": "cocosy.tistory.com", "link": "https://cocosy.tistory.com"},
+    {"type": "linkedin", "content": "suyeon-nam", "link": "https://www.linkedin.com/in/suyeon-nam-2b65881aa/"}
+  ],
   "interests": "De(velop | sign)\n& Research",
-  "introduction": "Hello :) I’m first year Master’s Student in the Department of Industrial Design at KAIST(Korea Advanced Institute of Science and Technology). Now I’m working with Prof. Hwajung Hong at DxD Lab. I graduated Sookmyung Women’s University majoring Computer Science.\nI’m interested in interaction between human and large language models and front-end development."
+  "introduction": "Hello :) I’m first year Master’s Student in the Department of Industrial Design at KAIST (Korea Advanced Institute of Science and Technology). Now I’m working with Prof. Hwajung Hong at DxD Lab. I graduated Sookmyung Women’s University majoring Computer Science.\nI’m interested in interaction between human and large language models and front-end development."
 }

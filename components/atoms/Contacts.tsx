@@ -12,14 +12,18 @@ export default function Contacts({
   contactType,
   contactValue,
   className,
-  link
+  link,
 }: Props) {
   return (
-    <a href={link} target="_blank">
-      <div className={classNames("flex flex-row justify-between text-sm", className)}>
-        <div className="font-medium">{contactType}</div>
-        <div className="font-light">{contactValue}</div>
+    <div
+      className={classNames("flex flex-row justify-between text-sm", className)}
+    >
+      <div className="font-medium">{contactType}</div>
+      <div className="font-light">
+        <a href={link} target="_blank" className="hover:underline">
+          {contactValue}
+        </a>
       </div>
-    </a>
+    </div>
   );
 }
