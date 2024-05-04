@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       fontFamily: {
         suit: ["SUIT", "sans-serif"],
+        default: ["default", "sans-serif"],
       },
       colors: {
         desire: "#e13e56",
