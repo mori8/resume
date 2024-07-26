@@ -18,8 +18,8 @@ export default function Communities() {
     return (
       <div className="flex flex-col">
         <div className="flex flex-row gap-4">
-          <h3 className="text-xl font-bold">{title}</h3>
-          <h5 className="text-xl">{position}</h5>
+          <h3 className="text-lg font-bold">{title}</h3>
+          <h5 className="text-lg">{position}</h5>
         </div>
         <div className="period mt-1">
           <span className="">{started}</span> -{" "}
@@ -30,7 +30,9 @@ export default function Communities() {
         </div>
         <ul className="ul-disc">
           {details.map((detail, detail_index) => (
-            <CustomLi key={`community_${index}_d${detail_index}`}>{detail}</CustomLi>
+            <CustomLi key={`community_${index}_d${detail_index}`}>
+              {detail}
+            </CustomLi>
           ))}
         </ul>
       </div>

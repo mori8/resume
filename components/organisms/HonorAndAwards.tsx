@@ -9,7 +9,7 @@ export default function HonorAndAwards({}: Props) {
     <SectionWrapper sectionTitle={`Honor\n& Awards`}>
       {HonorAndAwardsData.map((award, index) => (
         <div key={`award_${index}`} className="flex gap-4">
-          <span>{award.date}</span>
+          <span className='text-slate-400'>{award.date}</span>
           <span>{award.content}</span>
         </div>
       ))}

@@ -11,7 +11,7 @@ export default function Experiences() {
       <div className="flex flex-col">
         <div className="flex flex-row justify-between">
           <div className="flex flex-row gap-4">
-            <h3 className="text-xl font-bold">{title}</h3>
+            <h3 className="text-lg font-bold">{title}</h3>
             <h5 className="text-lg">{subtitle}</h5>
           </div>
           <span className="text-sm">{period}</span>
@@ -20,13 +20,14 @@ export default function Experiences() {
           <p className="">{description}</p>
         </div>
         <ul className="leading-relaxed w-4/5">
-          {
-            projects.map((project, index) => (
-              <li key={`exp_${props.index}_p${index}`} className="ml-4 pl-2 list-disc mt-2 text-slate-700 text-sm">
-                {project}
-              </li>
-            ))
-          }
+          {projects.map((project, index) => (
+            <li
+              key={`exp_${props.index}_p${index}`}
+              className="ml-4 pl-2 list-disc mt-2 text-slate-700 text-sm"
+            >
+              {project}
+            </li>
+          ))}
         </ul>
       </div>
     );

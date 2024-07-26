@@ -20,29 +20,24 @@ export default function Projects() {
           <div className="flex flex-col justify-between">
             <div className="flex-1">
               <div className="flex flex-row justify-between text-sm">
-                  <h5 className="mb-2 font-bold text-xl leading-none">
-                    {title}
-                  </h5>
+                <h5 className="mb-2 font-bold text-lg leading-none">{title}</h5>
                 <div className="mb-2">
                   <span>{period}</span>
                 </div>
               </div>
               <p className="mb-4 leading-none">
-                  {
-                    teamMembers.map((member, index) => (
-                      <span key={`team_member_${index}`}>
-                        <span className={
-                          classNames({
-                            "font-bold": member === "Suyeon Nam"
-                          })
-                        }>
-                        {member}
-                        </span>
-                        {index !== teamMembers.length - 1 && ", "}
-                      </span>
-                    ))
-
-                  }
+                {teamMembers.map((member, index) => (
+                  <span key={`team_member_${index}`}>
+                    <span
+                      className={classNames({
+                        "font-bold": member === "Suyeon Nam",
+                      })}
+                    >
+                      {member}
+                    </span>
+                    {index !== teamMembers.length - 1 && ", "}
+                  </span>
+                ))}
               </p>
               <p className="text-sm text-gray-700 whitespace-pre-wrap leading-relaxed w-4/5">
                 {description}

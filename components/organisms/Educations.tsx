@@ -11,31 +11,23 @@ export default function Educations() {
         {educations.map((education, index) => (
           <div className="flex-1 flex flex-col">
             <div>
-              <div className="flex flex-row gap-4">
-                <h3 className="text-xl font-bold">{education.univ}</h3>
-                <h5 className="text-xl">{education.major}</h5>
+              <div className="flex flex-row justify-between">
+                <h3 className="text-lg font-bold">{education.univ}</h3>
+                <span className="text-sm">{education.period}</span>
               </div>
               <div className="flex flex-row gap-3">
-                {education.totalGrade && (
+                {education.GPA && (
                   <span>
-                    GPA <b>{education.totalGrade}</b>
+                    GPA <b>{education.GPA}</b>
                   </span>
                 )}
-                {education.majorGrade && (
-                  <span>
-                    MAJOR GPA <b>{education.majorGrade}</b>
-                  </span>
-                )}
-              </div>
-              <div>
-                <span className="period">{education.period}</span>
               </div>
             </div>
-            <ul className="text-gray-600 ul-disc">
-              {education.details.map((detail, index) => (
-                <CustomLi key={`education_${index}`}>{detail}</CustomLi>
-              ))}
-            </ul>
+            <div className="mt-2 text-slate-700 text-sm">
+              <p className="whitespace-pre-wrap leading-relaxed">
+                {education.description}
+              </p>
+            </div>
           </div>
         ))}
       </div>

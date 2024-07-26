@@ -1,24 +1,16 @@
 [
   {
-    "univ": "KAIST(한국과학기술원)",
-    "location": "대전",
-    "major": "Industrial Design",
-    "period": "FEB 2024 - PRESENT",
-    "details": ["DxD Lab(지도교수: 홍화정 교수님) 석사과정"]
+    "univ": "Korea Advanced Institute of Science and Technology",
+    "location": "Daejeon",
+    "period": "2024.02 - Present",
+    "GPA": "4.0 / 4.3",
+    "description": "Department of Industrial Design, Master’s course\nAdvisor: Prof. Hwajung Hong"
   },
   {
-    "univ": "숙명여자대학교",
-    "location": "서울",
-    "major": "Computer Science",
-    "period": "MAR 2019 - FEB 2024",
-    "majorGrade": "4.24 / 4.3",
-    "totalGrade": "4.22 / 4.3",
-    "details": [
-      "졸업성적최우등생",
-      "국가우수장학금 이공계 재학중우수자(2년 전액) 수혜",
-      "학부 성적 최우등상(수석) 1회, 우등상 1회(차석)",
-      "알고리즘 학회 Algos 10기 학회원, 프로그래밍 중앙동아리 SOLUX 25기 부회장"
-    ],
-    "grades": [4.05, 4.2, 4.25, 4.3, 4.2, 4.3]
+    "univ": "Sookmyung Women's University",
+    "location": "Seoul",
+    "period": "2019.03 - 2024.02",
+    "GPA": "4.22 / 4.3",
+    "description": "Computer Science, Bachelor’s degree\nSumma cum laude"
   }
 ]

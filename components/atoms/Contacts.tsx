@@ -18,8 +18,8 @@ export default function Contacts({
     <div
       className={classNames("flex flex-row justify-between text-sm", className)}
     >
-      <div className="font-medium">{contactType}</div>
-      <div className="font-light">
+      <div className="font-medium">{contactType.toUpperCase()}</div>
+      <div className="">
         <a href={link} target="_blank" className="hover:underline">
           {contactValue}
         </a>

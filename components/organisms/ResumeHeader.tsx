@@ -16,7 +16,7 @@ export default function ResumeHeader(props: IResumeHeaderProps) {
           height={208}
         />
       </div>
-      <div className="text-5xl flex flex-row justify-between leading-tight">
+      <div className="text-4xl flex flex-row justify-between leading-tight">
         <div className="flex-shrink-0">
           <h1 className="mb-4">
             <span className="font-black">{introduction.name}</span>
