@@ -1,41 +1,13 @@
 [
   {
-    "started": "FEB 2022",
-    "ended": "DEC 2022",
+    "period": "2022.02 - 2022.12",
     "title": "GOODLIFELAB",
-    "subtitle": "Software Engineer | Front-end Development",
-    "description": "서울대학교 심리학과 교수 출신 CEO를 중심으로 설립한 심리학 기반 Mental care 및 Wellness 중심 스타트업",
-    "link": "https://goodlifelab.co.kr/",
+    "subtitle": "Software Engineer",
+    "description": "Psychology-based mental care and wellness startup",
+    "link": "https://www.goodlifelab.kr/",
     "projects": [
-      {
-        "title": "초기 MVP 서비스(굿라이프 테스트) 개발 참여",
-        "techstack": ["React", "tailwind CSS", "TypeScript"],
-        "description": [
-          "PDF Export 기능을 컴포넌트에 쉽게 접목할 수 있는 라이브러리가 있었던 React로 프론트엔드를 작성했고, 백엔드 API에서 준 데이터를 기반으로 개인화된 보고서를 출력하는 작업 진행",
-          "shortcut으로 빠른 스타일링이 가능한 Tailwind CSS로 스타일을 적용하였으며, SVG를 적극적으로 사용하여 PDF 용량을 줄이고 유저별로 개인화된 이미지와 커스텀 차트 제공",
-          "200~300명의 유저 데이터 기준 7~10일이 걸리던 기존 Export 방식을 웹사이트 개발을 통해 2시간 내로 작업 가능하도록 개선"
-        ],
-        "screenshots": [""]
-      },
-      {
-        "title": "회사 홍보를 위한 ‘바라던 바다 심리테스트' 개발",
-        "techstack": [
-          "React",
-          "styled-components",
-          "TypeScript",
-          "fastAPI",
-          "MySQL",
-          "AWS"
-        ],
-        "description": [
-          "기획자 1명과 함께 사내에서 회사 홍보를 위해 자율적으로 진행한 프로젝트로, Google Analytics 기준 총 사용자 수 약 5.1만 명의 Big 5 심리검사를 기반으로 한 심리테스트",
-          "사용자의 몰입을 위해 스토리라인에 따라 질문의 배경과 선택할 수 있는 응답지의 형태에 변주를 주었음",
-          "백엔드와 프론트엔드 둘 다 개발해야 했기 때문에, 빠른 개발을 위해 손에 익었던 React를 선택했으며, 상태관리를 위해 Context API를 사용",
-          "몰입에 방해가 되지 않게 이미지는 모두 서비스 첫 접근 시 pre-loading해 화면이 깜빡이지 않도록 함",
-          "AWS ELB와 S3를 통해 서비스 배포"
-        ],
-        "screenshots": [""]
-      }
+      "Developed a React-based client application for the MVP service, generating personalized PDF reports and reducing export time from 7-10 days to under 2 hours for 200-300 users.",
+      "Created an engaging, storyline-driven psychological test named ‘바라던 바다 성격유형 테스트’, inspired by the Big 5 model, attracting over 5.1 million users by implementing dynamic backgrounds and answer sheets."
     ]
   }
 ]

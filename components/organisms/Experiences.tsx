@@ -6,48 +6,28 @@ import classNames from "classnames";
 
 export default function Experiences() {
   const Experience = (props: ExperiencePropsWithIndex) => {
-    const {
-      index,
-      started,
-      ended,
-      title,
-      subtitle,
-      description,
-      link,
-      projects,
-    } = props;
+    const { period, title, subtitle, description, link, projects } = props;
     return (
       <div className="flex flex-col">
-        <div className="flex flex-row gap-4">
-          <h3 className="text-xl font-bold">{title}</h3>
-          <h5 className="text-xl">{subtitle}</h5>
+        <div className="flex flex-row justify-between">
+          <div className="flex flex-row gap-4">
+            <h3 className="text-xl font-bold">{title}</h3>
+            <h5 className="text-lg">{subtitle}</h5>
+          </div>
+          <span className="text-sm">{period}</span>
         </div>
-        <div className="period mt-1">
-          <span className="">{started}</span> -{" "}
-          <span className="">{ended}</span>
-        </div>
-        <div className="mt-3">
+        <div className="mt-2">
           <p className="">{description}</p>
         </div>
-        <div className="flex flex-col gap-2">
-          {projects.map((project, project_index) => {
-            const { title, description } = project;
-            return (
-              <div key={`exp_${index}_p${project_index}`} className="">
-                <h4 className="mt-5 font-semibold">{title}</h4>
-                <ul className="ul-disc">
-                  {description.map((desc, desc_index) => {
-                    return (
-                      <CustomLi key={`exp_${index}_p${project_index}_d${desc_index}`}>
-                        {desc}
-                      </CustomLi>
-                    );
-                  })}
-                </ul>
-              </div>
-            );
-          })}
-        </div>
+        <ul className="leading-relaxed w-4/5">
+          {
+            projects.map((project, index) => (
+              <li key={`exp_${props.index}_p${index}`} className="ml-4 pl-2 list-disc mt-2 text-slate-700 text-sm">
+                {project}
+              </li>
+            ))
+          }
+        </ul>
       </div>
     );
   };

@@ -29,7 +29,7 @@ export default function Projects() {
                   <span>{period}</span>
                 </div>
               </div>
-              <p className="mb-3 leading-none">
+              <p className="mb-4 leading-none">
                   {
                     teamMembers.map((member, index) => (
                       <span key={`team_member_${index}`}>
@@ -46,7 +46,7 @@ export default function Projects() {
 
                   }
               </p>
-              <p className="text-sm text-gray-600 whitespace-pre-wrap leading-6 w-4/5">
+              <p className="text-sm text-gray-700 whitespace-pre-wrap leading-relaxed w-4/5">
                 {description}
               </p>
             </div>

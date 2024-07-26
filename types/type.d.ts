@@ -1,13 +1,12 @@
 declare module 'gtag.js';
 
 interface ExperienceProps {
-  started: string;
-  ended: string;
+  period: string;
   title: string;
   subtitle: string | null;
   description: string;
   link: string;
-  projects: projectProps[];
+  projects: string[];
 }
 
 interface ExperiencePropsWithIndex extends ExperienceProps {
