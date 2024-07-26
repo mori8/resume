@@ -1,7 +1,7 @@
-import { useState } from "react";
 import HighlightedText from "../atoms/HighlightedText";
 import CustomLi from "../atoms/CustomLi";
 import experiences from "../../data/experiences.json";
+import SectionWrapper from "../molecules/SectionWrapper";
 import classNames from "classnames";
 
 export default function Experiences() {
@@ -31,11 +31,10 @@ export default function Experiences() {
         </div>
         <div className="flex flex-col gap-2">
           {projects.map((project, project_index) => {
-            const { title, description, techstack, screenshots } = project;
+            const { title, description } = project;
             return (
               <div key={`exp_${index}_p${project_index}`} className="">
                 <h4 className="mt-5 font-semibold">{title}</h4>
-                <p className="text-gray-600">{techstack.join(", ")}</p>
                 <ul className="ul-disc">
                   {description.map((desc, desc_index) => {
                     return (
@@ -54,13 +53,10 @@ export default function Experiences() {
   };
 
   return (
-    <section className="section-experiences">
-      <HighlightedText backgroundSize="none" className="text-2xl mb-10">
-        Work Experiences
-      </HighlightedText>
+    <SectionWrapper sectionTitle={`Work\nExperiences`}>
       {experiences.map((experience, index) => (
         <Experience key={`exp_${index}`} {...experience} index={index} />
       ))}
-    </section>
+    </SectionWrapper>
   );
 }

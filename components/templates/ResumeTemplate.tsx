@@ -5,7 +5,7 @@ import ResumeFooter from "../organisms/ResumeFooter";
 import Educations from "../organisms/Educations";
 import Experiences from "../organisms/Experiences";
 import Projects from "../organisms/Projects";
-import Communities from "../organisms/Communities";
+import HonorAndAwards from "../organisms/HonorAndAwards";
 import RoundedButtonWithHoverMessage from "../atoms/RoundedButtonWithHoverMessage";
 
 export interface IResumeTemplateProps {}
@@ -30,11 +30,10 @@ export default function ResumeTemplate(props: IResumeTemplateProps) {
         <ResumeHeader />
       </>
       <main className="flex flex-col gap-32 mt-24">
-        {/* TODO: 여기서 props로 json 전달 */}
-        <Experiences />
         <Projects />
-        <Communities />
+        <Experiences />
         <Educations />
+        <HonorAndAwards />
       </main>
       <>
         <ResumeFooter />

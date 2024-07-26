@@ -49,7 +49,7 @@ interface ProjectsProps {
   period: string;
   description: string;
   myRoles: string,
-  teamMembers: string,
+  teamMembers: string[],
   contributions: string,
   responsibilities: string[];
   link: string,

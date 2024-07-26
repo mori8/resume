@@ -1,14 +1,12 @@
 import * as React from "react";
 import HighlightedText from "../atoms/HighlightedText";
 import CustomLi from "../atoms/CustomLi";
+import SectionWrapper from "../molecules/SectionWrapper";
 import educations from "../../data/educations.json";
 
 export default function Educations() {
   return (
-    <section className="section-educations">
-      <HighlightedText backgroundSize="none" className="text-2xl mb-10">
-        Educations
-      </HighlightedText>
+    <SectionWrapper sectionTitle="Educations">
       <div className="flex flex-col gap-8">
         {educations.map((education, index) => (
           <div className="flex-1 flex flex-col">
@@ -41,6 +39,6 @@ export default function Educations() {
           </div>
         ))}
       </div>
-    </section>
+    </SectionWrapper>
   );
 }

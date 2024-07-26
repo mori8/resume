@@ -1,11 +1,12 @@
 [
   {
-    "title": "새라[Sae:ra]",
-    "imageURL": "/images/project-saera.webp",
-    "period": "JAN 2023 - MAR 2023",
-    "description": "북한이탈주민의 남한 표준 억양 및 발음 학습을 위한 애플리케이션으로 북한과 남한의 언어적 차이를 위주로 컨텐츠를 구성했으며, 사용자의 억양을 그래프로 시각화하여 억양의 차이를 직관적으로 이해하고 학습할 수 있게 함. Google Developers가 주최하는 2023 Solution Challenge에서 Global Top 100 Semi-Finalist로 선정.",
+    "title": "Sae:ra",
+    "imageURL": "",
+    "period": "2023.01 - 2023.05",
+    "description": "Sae:ra(새라) is a cross-platform mobile application for North Korean refugees to learn standard South Korean accent and pronunciation. I was responsible for python server development and UI/UX design.\nThis project was recognized as a Global Top 100 Solution in the 2022 Solution Challenge.",
     "myRoles": "ML Backend(FastAPI), 기획, UI/UX 디자인",
-    "teamMembers": "4명(Flutter 2 / Spring 1 / ML Backend 1)",
+    "teamMembers": ["Doeun Kim", "Suyeon Nam", "Jueun Lee", "Yeonjin Hwang"],
+    "highlightOnTeamMembers": 1,
     "contributions": "35%",
     "responsibilities": [
       "ML 모델 사용과 문장 간 유사도 계산, 데이터 가공 등을 위한 Python 서버 (FastAPI) 개발",
@@ -14,24 +15,27 @@
       "보안을 위해 매 통신 시 스프링 서버와 Access-Token을 통해 인증",
       "더 나은 사용자 경험을 위해 컴포넌트 배치와 형태에 통일감을 주고, 애니메이션이나 알림음 등의 유저 피드백을 적극적으로 활용한 UI를 디자인"
     ],
-    "link": "https://github.com/YeonJeans",
-    "references": [
+    "links": [
       {
-        "title": "Saera - GDSC Solution Challenge 2023",
-        "mainText": "Saera(새라) is a pronunciation & intonation Learning application for North Korean defectors in South Korea. We built our project with Google technologies like Flutter and GCP, and visualize intonation through models in Tensorflow Hub.",
-        "imageURL": "/images/project-saera.webp",
-        "href": "https://www.youtube.com/watch?v=zmuxz9bldj4",
-        "type": "youtube"
+        "icon": "github",
+        "title": "GitHub",
+        "href": "https://github.com/YeonJeans"
+      },
+      {
+        "icon": "youtube",
+        "title": "Demo Video",
+        "href": "https://www.youtube.com/watch?v=zmuxz9bldj4"
       }
     ]
   },
   {
     "title": "NotiNote",
-    "imageURL": "/images/project-notinote.webp",
-    "period": "JAN 2022 - MAR 2022, MAY 2022",
-    "description": "다문화가정 학부모를 위한 가정통신문 번역 및 학사일정 관리 애플리케이션. Google Developers가 주최하는 2022 Solution Challenge에서 Global Top 50 Semi-Finalist로 선정. Google Developers 공식 유튜브에 소개됨",
+    "imageURL": "",
+    "period": "2022.01 - 2022.05",
+    "description": "A school newsletter translation and calendar management application for parents of multicultural families. Selected as a Global Top 50 Semi-Finalist in the 2022 Solution Challenge organized by Google Developers. Also, NotiNote's development story was featured on the official Google Developers YouTube channel.",
     "myRoles": "Frontend(React Native), ML Backend(FastAPI), 디자인",
-    "teamMembers": "4명(React Native 1.5 / Spring 2 / ML Backend 0.5)",
+    "teamMembers": ["Suyeon Nam", "Hee Suh", "Hyeonae Jang", "Jiyeon Yoo"],
+    "highlightOnTeamMembers": 0,
     "contributions": "25%",
     "responsibilities": [
       "인트로 화면과 홈 화면, 검색 화면 디자인 및 구현",
@@ -40,45 +44,34 @@
       "HuggingFace Accelerated Inference API 사용을 위한 FastAPI 서버 구축 및 Heroku 배포",
       "Googler의 멘토링 피드백을 반영한 UX 개선 및 QA ML 모델을 도입해 날짜-이벤트 매칭 기능의 한계 개선(이벤트 추출 성능 평가 결과 정확도 84.6%)"
     ],
-    "link": "https://github.com/dsc-sookmyung/2022-Answer-SolutionChallenge",
+    "links": [
+      {
+        "icon": "github",
+        "title": "GitHub",
+        "href": "https://github.com/YeonJeans"
+      },
+      {
+        "icon": "youtube",
+        "title": "Demo Video",
+        "href": "https://www.youtube.com/watch?v=zmuxz9bldj4"
+      },
+      {
+        "icon": "youtube",
+        "title": "Interview with Google",
+        "href": "https://www.youtube.com/watch?v=zmuxz9bldj4"
+      }
+    ],
     "references": [
       {
-        "title": "NotiNote의 2022 Solution Challenge Global Top 50 진출기 - (1)",
-        "mainText": "2편이 너무 늦은 점 죄송합니다. 한때 파워블로거가 꿈이었는데 이정도 업데이트 속도라면 빠르게 꿈을 접길 잘했네요. 2편에서는 Top 50 세미 파이널 진출 이후부터 Top 10 결과 발표까지의 이야기를 다룹니다. 솔루션 챌린지가 무슨 대회인지 궁금하신 분들은 아래 '더보기' 클릭 고고",
-        "imageURL": "/images/project-notinote.webp",
-        "href": "https://cocosy.tistory.com/84",
-        "type": "blog"
-      },
-      {
-        "title": "NotiNote의 2022 Solution Challenge Global Top 50 진출기 - (2)",
-        "mainText": "이 글은 (1)과 (2)로 나누어집니다. 🤨 잠깐, Solution Challenge가 무엇인가요? 2022 Solution Challenge | Google Developers Solve for one or more of the United Nations 17 Sustainable Development Goals using Google technology.",
-        "imageURL": "/images/project-notinote-2.webp",
-        "href": "https://cocosy.tistory.com/85",
-        "type": "blog"
-      },
-      {
-        "title": "[Top 50] NotiNote - 2022 Solution Challenge",
-        "mainText": "NotiNote is a specialized app service that helps multicultural parents easily manage their children's school schedules by translating school newsletter and adding automatically detected school events to the calendar.",
-        "imageURL": "/images/youtube-notinote.webp",
-        "href": "https://www.youtube.com/watch?v=1F9g3U792G8",
-        "type": "youtube"
+        "name": "GitHub",
+        "url": "https://github.com/dsc-sookmyung/2022-Answer-SolutionChallenge"
+      }, {
+        "name": "Demo Video (YouTube)",
+        "url": "https://www.youtube.com/watch?v=1F9g3U792G8"
+      }, {
+        "name": "Interview with Google Developers Community (YouTube)",
+        "url": "https://www.youtube.com/watch?v=CMN0rd1-uOM"
       }
     ]
-  },
-  {
-    "title": "Mazassumnida",
-    "imageURL": "/images/project-mazassumnida.webp",
-    "period": "JUL 2020",
-    "description": "정보과학 알고리즘 트레이닝 사이트인 Baekjoon Online Judge의 유저 정보를 svg 뱃지 형식으로 보여주는 Github Readme Decoration API 서비스",
-    "myRoles": "API 개발 및 디자인",
-    "teamMembers": "2명(Django, Design 1 / SVG Animation 1)",
-    "contributions": "90%",
-    "responsibilities": [
-      "Django에서 Query String으로 전달받은 username으로 solved.ac API서버에 유저 정보를 요청하여 받아온 정보를 바탕으로 XML을 작성하여 SVG 뱃지 생성",
-      "GitHub 내에서 8천 명 이상의 유저가 사용 중(code results 검색 결과)",
-      "첫 공개 이후 지속적으로 테마 업데이트 및 유지보수하며 사용자 수를 꾸준히 늘려가고 있음"
-    ],
-    "link": "https://github.com/mazassumnida/mazassumnida",
-    "references": []
   }
 ]
