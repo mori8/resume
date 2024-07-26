@@ -51,8 +51,7 @@ interface ProjectsProps {
   teamMembers: string[],
   contributions: string,
   responsibilities: string[];
-  link: string,
-  references: referenceProps[] | undefined;
+  links: { icon: string, title: string, href: string }[];
 }
 
 declare global {

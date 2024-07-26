@@ -12,7 +12,7 @@ export default function Projects() {
       index: number;
     }
   ) => {
-    const { title, description, period, myRoles, teamMembers, link } = props;
+    const { title, description, period, myRoles, teamMembers, links } = props;
 
     return (
       <div className="project-container">
@@ -20,11 +20,9 @@ export default function Projects() {
           <div className="flex flex-col justify-between">
             <div className="flex-1">
               <div className="flex flex-row justify-between text-sm">
-                <a href={link} target="_blank" className="hover:underline">
                   <h5 className="mb-2 font-bold text-xl leading-none">
                     {title}
                   </h5>
-                </a>
                 <div className="mb-2">
                   <span>{period}</span>
                 </div>
