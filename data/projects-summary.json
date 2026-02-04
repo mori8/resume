@@ -1,0 +1,44 @@
+[
+  {
+    "slug": "mindstock",
+    "title": "MindStock",
+    "thumbnail": "/images/project-qomics.webp",
+    "tags": ["React Native", "Firebase", "HCI"],
+    "order": 1
+  },
+  {
+    "slug": "chatmedi",
+    "title": "ChatMedi",
+    "thumbnail": "/images/project-mazassumnida.webp",
+    "tags": ["LLM", "Healthcare", "HCI"],
+    "order": 2
+  },
+  {
+    "slug": "saera",
+    "title": "새라 (Saera)",
+    "thumbnail": "/images/project-saera.webp",
+    "tags": ["Android", "Accessibility", "Voice UI"],
+    "order": 3
+  },
+  {
+    "slug": "notinote",
+    "title": "NotiNote",
+    "thumbnail": "/images/project-notinote.webp",
+    "tags": ["Android", "Productivity", "Widget"],
+    "order": 4
+  },
+  {
+    "slug": "goodlifelab-report",
+    "title": "GOODLIFELAB - 보고서 자동화",
+    "thumbnail": "/images/gll-logo.png",
+    "tags": ["Automation", "Full-Stack", "DevOps"],
+    "order": 5
+  },
+  {
+    "slug": "goodlifelab-test",
+    "title": "GOODLIFELAB - 바라던 바다 테스트",
+    "thumbnail": "/images/project-noonsongtest.webp",
+    "tags": ["Web", "Psychology", "Analytics"],
+    "order": 6
+  }
+]
