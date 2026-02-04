@@ -37,7 +37,7 @@
 - [ ] 기존 `pages/index.tsx`의 내용을 참고하여 App Router 호환 컴포넌트로 변환 (Phase 2에서 고도화, Phase 1은 렌더링 확인 위주)
 
 ## 3. 검증 계획
-- [ ] `npm run dev`로 개발 서버 실행 시 오류 없음 확인
-- [ ] `localhost:3000` 접속 시 App Router 기반 페이지 렌더링 확인
-- [ ] Tailwind 스타일 및 폰트 적용 확인
-- [ ] 네비게이션 바 언어 토글 작동 확인
+- [x] `npm run dev`로 개발 서버 실행 시 오류 없음 확인
+- [x] `localhost:3000` 접속 시 App Router 기반 페이지 렌더링 확인
+- [x] Tailwind 스타일 및 폰트 적용 확인
+- [x] 네비게이션 바 언어 토글 작동 확인
