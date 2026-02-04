@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import { LanguageProvider } from './providers';
+import Navigation from '@/components/layout/Navigation';
 import './globals.css';
 
 const suit = localFont({
@@ -78,7 +79,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${suit.variable} noise font-suit antialiased`}>
         <LanguageProvider>
-          {children}
+          <Navigation />
+          <main className="pt-16">
+            {children}
+          </main>
         </LanguageProvider>
       </body>
     </html>
