@@ -1,13 +1,46 @@
 [
   {
     "period": "2022.02 - 2022.12",
-    "title": "GOODLIFELAB",
-    "subtitle": "Software Engineer",
-    "description": "Psychology-based mental care and wellness startup",
-    "link": "https://www.goodlifelab.kr/",
+    "company": "GOODLIFELAB",
+    "companyKo": "굿라이프랩",
+    "position": "Full-Stack Software Engineer",
     "projects": [
-      "Developed a React-based client application for the MVP service, generating personalized PDF reports and reducing export time from 7-10 days to under 2 hours for 200-300 users.",
-      "Created an engaging, storyline-driven psychological test named ‘바라던 바다 성격유형 테스트’, inspired by the Big 5 model, attracting over 5.1 million users by implementing dynamic backgrounds and answer sheets."
+      {
+        "title": {
+          "ko": "굿라이프 보고서 생성 자동화 시스템 개발",
+          "en": "Goodlife Report Generation Automation System"
+        },
+        "problem": {
+          "ko": "기존 엑셀을 통한 수작업 방식으로는 300명 분량의 리포트 발행에 7-10일이 소요",
+          "en": "Manual Excel-based process required 7-10 days to publish reports for 300 users"
+        },
+        "solution": {
+          "ko": "React 기반의 웹 서비스를 구축하여 리포트 생성 자동화. Kendo PDF 라이브러리와 SVG를 활용해 사용자별 맞춤 디자인과 차트를 경량화된 PDF로 출력",
+          "en": "Built a React-based web service for automated report generation. Used Kendo PDF library and SVG to output customized designs and charts as lightweight PDFs"
+        },
+        "outcome": {
+          "ko": "수작업 프로세스를 자동화하여 리포트 발행 시간을 7일에서 2시간으로 단축하고, 이후 서비스 운영 백오피스로 확장",
+          "en": "Automated manual process, reducing report publishing time from 7 days to 2 hours, later expanded to service operations back-office"
+        }
+      },
+      {
+        "title": {
+          "ko": "기업 홍보용 인터랙티브 심리 테스트(바라던 바다 테스트) 개발",
+          "en": "Interactive Psychology Test for Corporate Marketing (Baradeon Bada Test)"
+        },
+        "problem": {
+          "ko": "테스트 사이트 내 다수의 이미지 리소스로 인한 로딩 지연과 화면 깜빡임 발생",
+          "en": "Loading delays and screen flickering due to numerous image resources in the test site"
+        },
+        "solution": {
+          "ko": "모든 이미지 에셋의 Pre-loading을 구현하고, Context API로 전역 상태를 관리하여 끊김 없는 UX 제공",
+          "en": "Implemented pre-loading for all image assets and managed global state with Context API for seamless UX"
+        },
+        "outcome": {
+          "ko": "3일간 약 51,000회의 테스트 완료를 기록하며 안정적으로 마케팅 캠페인 수행",
+          "en": "Recorded approximately 51,000 test completions in 3 days, successfully executing the marketing campaign"
+        }
+      }
     ]
   }
 ]

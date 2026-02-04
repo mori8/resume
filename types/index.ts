@@ -57,3 +57,55 @@ export interface Project extends ProjectSummary {
     paper?: string;
   };
 }
+
+export interface Publication {
+  id: number;
+  title: string;
+  authors: string[];
+  venue: string;
+  venueShort: string;
+  year: number;
+  type: 'conference' | 'journal';
+  isFirstAuthor: boolean;
+  links: {
+    doi?: string;
+    openreview?: string;
+    github?: string;
+    huggingface?: string;
+  };
+}
+
+export interface LocalizedText {
+  ko: string;
+  en: string;
+}
+
+export interface ExperienceProject {
+  title: LocalizedText;
+  problem: LocalizedText;
+  solution: LocalizedText;
+  outcome: LocalizedText;
+}
+
+export interface Experience {
+  period: string;
+  company: string;
+  companyKo: string;
+  position: string;
+  projects: ExperienceProject[];
+}
+
+export interface Education {
+  school: LocalizedText;
+  degree: LocalizedText;
+  period: string;
+  gpa: string;
+  gpaDetail?: LocalizedText;
+  details?: LocalizedText & { ko: string[]; en: string[] };
+}
+
+export interface Award {
+  year: string;
+  title: LocalizedText;
+  link?: string;
+}
