@@ -9,6 +9,7 @@ export interface Profile {
     ko: string;
     en: string;
   };
+  birthDate?: string;
   title: {
     ko: string;
     en: string;
@@ -51,10 +52,12 @@ export interface Project extends ProjectSummary {
     ko: string;
   };
   images: string[];
+  videoUrl?: string;
   links?: {
     github?: string;
     demo?: string;
     paper?: string;
+    youtube?: string;
   };
 }
 

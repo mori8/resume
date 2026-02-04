@@ -13,12 +13,12 @@ export default function IntroSection() {
   return (
     <section className="flex-shrink-0 lg:w-[45%] flex flex-col justify-center">
       {/* Profile Image */}
-      <div className="w-40 h-52 lg:w-48 lg:h-64 relative mb-8 grayscale">
+      <div className="w-40 h-48 relative mb-8 grayscale flex-shrink-0 overflow-hidden">
         <Image
           src={profile.image}
           alt={profile.name.en}
           fill
-          className="object-cover"
+          className="object-cover scale-125"
           priority
         />
       </div>
@@ -45,6 +45,9 @@ export default function IntroSection() {
               {contact.label}
             </a>
           ))}
+          {profile.birthDate && (
+            <span className="text-gray-400">{profile.birthDate}</span>
+          )}
         </div>
       </div>
 

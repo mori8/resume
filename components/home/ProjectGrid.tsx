@@ -9,7 +9,7 @@ const projects = projectsData as ProjectSummary[];
 
 export default function ProjectGrid() {
   return (
-    <section className="lg:w-[55%] flex flex-col min-h-0 pl-12 pt-24 pb-8">
+    <section className="lg:w-[40%] flex flex-col min-h-0 pl-12 pb-40">
       <h2 className="text-sm font-bold uppercase tracking-wider mb-6 text-black">Projects</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-rows-3 gap-3 flex-1 min-h-0">
