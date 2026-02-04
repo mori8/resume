@@ -1,0 +1,19 @@
+{
+  "nav": {
+    "projects": "Projects",
+    "publications": "Publications",
+    "experience": "Experience",
+    "education": "Education",
+    "cv": "CV"
+  },
+  "about": {
+    "name": "남수연",
+    "title": "HCI 연구자 & 개발자",
+    "description": "사람들이 더 나은 결정을 내릴 수 있도록 돕는 인터랙티브 시스템을 디자인하고 개발합니다.",
+    "contact": {
+      "email": "이메일",
+      "github": "GitHub",
+      "linkedin": "LinkedIn"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "nav": {
+    "projects": "Projects",
+    "publications": "Publications",
+    "experience": "Experience",
+    "education": "Education",
+    "cv": "CV"
+  },
+  "about": {
+    "name": "Suyeon Nam",
+    "title": "HCI Researcher & Developer",
+    "description": "I design and develop interactive systems that help people make better decisions.",
+    "contact": {
+      "email": "Email",
+      "github": "GitHub",
+      "linkedin": "LinkedIn"
+    }
+  }
+}
