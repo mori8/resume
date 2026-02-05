@@ -2,78 +2,75 @@
   {
     "slug": "mindstock",
     "title": "MindStock",
-    "thumbnail": "/images/project-qomics.webp",
+    "thumbnail": "/images/project-mindstock.png",
     "tags": ["React Native", "Firebase", "HCI"],
     "order": 1,
     "period": "2024.09 - 2025.02",
     "summary": {
-      "en": "A mock investment mobile app designed to help emotionally biased investors reflect on their decision-making patterns through AI-mediated interventions.",
-      "ko": "AI 기반 개입을 통해 감정적으로 편향된 투자자들이 자신의 의사결정 패턴을 성찰할 수 있도록 돕는 모의 투자 모바일 앱"
+      "en": "A mobile mock-trading app that supports investor self-reflection through personal checklists, real-time behavioral insights, and weekly AI-generated trade reports.",
+      "ko": "개인 체크리스트, 실시간 행동 인사이트, 주간 AI 리포트를 통해 투자자의 자기 성찰을 돕는 모바일 모의투자 앱입니다."
     },
-    "techStack": ["React Native", "Firebase", "TypeScript", "Python", "FastAPI"],
+    "techStack": ["React Native", "TypeScript", "Firebase", "Cloud Functions", "Cloud Run", "Anthropic API", "AlphaSquare"],
     "team": "KAIST HCI Lab",
     "role": {
-      "en": "Led the full development cycle including system design, mobile app development, and user study coordination with 20 participants over 6 weeks.",
-      "ko": "시스템 설계, 모바일 앱 개발, 6주간 20명의 참가자를 대상으로 한 사용자 연구 조율을 포함한 전체 개발 주기 주도"
+      "en": "Designed and built the entire system end-to-end: mobile app, behavioral data pipeline (including accelerometer-based hand tremor detection), personal baseline engine, weekly pattern mining, and AI report generation with Claude 4.5 Sonnet. Also ran the 6-week field study.",
+      "ko": "모바일 앱, 행동 데이터 파이프라인(가속도계 기반 손 떨림 감지 포함), 개인 기준선 엔진, 주간 패턴 마이닝, Claude 4.5 Sonnet 기반 AI 리포트 생성까지 시스템 전체를 설계하고 구현했습니다. 6주간 필드 스터디도 운영했습니다."
     },
     "details": {
-      "en": "## Problem\nRetail investors often make emotionally-driven decisions that lead to poor investment outcomes. Existing tools focus on education but fail to address real-time emotional biases during trading.\n\n## Solution\nMindStock provides real-time AI-mediated interventions that detect emotional trading patterns and prompt users to reflect before making decisions. The app simulates real market conditions while tracking emotional states.\n\n## Outcome\nSuccessfully conducted a 6-week longitudinal study with 20 participants. Findings will be presented at DIS 2025 as a Pictorial work-in-progress paper.",
-      "ko": "## 문제\n개인 투자자들은 종종 감정에 기반한 결정을 내려 좋지 않은 투자 결과를 초래합니다. 기존 도구들은 교육에 집중하지만 거래 중 실시간 감정적 편향을 다루지 못합니다.\n\n## 해결책\nMindStock은 감정적 거래 패턴을 감지하고 결정 전 성찰을 유도하는 실시간 AI 기반 개입을 제공합니다. 앱은 감정 상태를 추적하면서 실제 시장 조건을 시뮬레이션합니다.\n\n## 성과\n20명의 참가자를 대상으로 6주간의 종단 연구를 성공적으로 수행했습니다. 연구 결과는 DIS 2025에서 Pictorial 논문으로 발표될 예정입니다."
+      "en": "## Problem\nInvestors all have different risk tolerances, strategies, and goals — there is no single \"correct\" trading behavior. But existing tools focus on financial education or alerts, without helping investors reflect on their own patterns at the point of decision.\n\n## Solution\nMindStock combines four components for real-time awareness and delayed reflection:\n\n**Principles Checklist** — Users write 3–5 personal investment rules during onboarding. These appear at the order confirmation screen as a reminder, without blocking the trade.\n\n**Pre-Trade Behavioral Insights** — Tracks 5 metrics (decision time, trade size, trading frequency, hand tremor via accelerometer, news checking) and compares each to the user's personal baseline. Deviations are shown neutrally as \"more/less than usual.\"\n\n**Post-Trade Reflection** — Captures emotions right after trading and again 72 hours later. Comparing the two reveals patterns like regret or overconfidence.\n\n**Weekly AI Report** — Delivered every Monday via KakaoTalk. Uses itemset mining to surface recurring behavioral patterns, then Claude 4.5 Sonnet generates non-prescriptive analysis with reflection questions.\n\n## Outcome\nDeployed in a 6-week field study (weeks 1–3: baseline, weeks 4–6: interventions active). Presented at DIS 2025.",
+      "ko": "## 문제\n투자자마다 위험 허용도, 전략, 목표가 다르기 때문에 보편적으로 '올바른' 매매 행동은 없습니다. 하지만 기존 도구들은 금융 교육이나 알림에 집중할 뿐, 의사결정 순간에 자기 패턴을 돌아보게 해주지 않습니다.\n\n## 해결책\nMindStock은 실시간 인식과 사후 성찰을 위한 네 가지 컴포넌트를 결합합니다:\n\n**원칙 체크리스트** — 온보딩 시 3~5개의 개인 투자 원칙을 작성합니다. 주문 확인 화면에서 리마인더로 나타나며, 거래를 차단하지 않습니다.\n\n**거래 전 행동 인사이트** — 5가지 지표(의사결정 시간, 거래 규모, 거래 빈도, 가속도계 기반 손 떨림, 뉴스 확인)를 추적하고 개인 기준선과 비교합니다. 편차는 \"평소보다 많음/적음\"으로 중립적으로 표시됩니다.\n\n**거래 후 성찰** — 거래 직후와 72시간 뒤, 두 시점에서 감정 상태를 수집합니다. 비교를 통해 후회나 과신 같은 패턴을 파악합니다.\n\n**주간 AI 리포트** — 매주 월요일 카카오톡으로 전송됩니다. 아이템셋 마이닝으로 반복 행동 패턴을 발견하고, Claude 4.5 Sonnet이 성찰 질문을 포함한 비처방적 분석을 생성합니다.\n\n## 성과\n6주간 필드 스터디 배포(1~3주: 기준선, 4~6주: 개입 활성화). DIS 2025 발표."
     },
-    "images": ["/images/project-qomics.webp"],
-    "videoUrl": null,
+    "images": ["/images/project-mindstock.png"],
+    "videoUrl": "/videos/mindstock-demo.MP4",
     "links": {
-      "github": null,
       "paper": "https://doi.org/10.1145/3615234.1234567"
     }
   },
   {
     "slug": "chatmedi",
     "title": "ChatMedi",
-    "thumbnail": "/images/project-mazassumnida.webp",
+    "thumbnail": "/images/project-chatmedi.png",
     "tags": ["LLM", "Healthcare", "HCI"],
     "order": 2,
     "period": "2024.03 - 2024.08",
     "summary": {
-      "en": "An LLM-based virtual teaching assistant for medical education, providing personalized feedback and adaptive learning support.",
-      "ko": "의료 교육을 위한 LLM 기반 가상 교육 조교로, 개인화된 피드백과 적응형 학습 지원 제공"
+      "en": "A chatbot platform that uses an LLM to orchestrate multiple medical AI models — users give natural language commands, and the system handles model selection, data preprocessing, and result interpretation automatically.",
+      "ko": "LLM으로 여러 의료 AI 모델을 조율하는 챗봇 플랫폼입니다. 자연어 명령만 주면 모델 선택, 데이터 전처리, 결과 해석을 자동으로 처리합니다."
     },
-    "techStack": ["Python", "LangChain", "OpenAI API", "React", "FastAPI"],
-    "team": "KAIST HCI Lab",
+    "techStack": ["Python", "LLM", "React", "FastAPI", "Model Registry"],
+    "team": "KAIST Industrial Design",
     "role": {
-      "en": "Contributed to prompt engineering, evaluation pipeline design, and user study coordination for the LLM-based teaching assistant system.",
-      "ko": "LLM 기반 교육 조교 시스템의 프롬프트 엔지니어링, 평가 파이프라인 설계, 사용자 연구 조율에 기여"
+      "en": "Designed the system architecture: LLM controller pipeline (request parsing → model selection via Model Cards → preprocessing → execution → response generation), model registration guidelines, and the chat interface.",
+      "ko": "시스템 아키텍처 설계: LLM 컨트롤러 파이프라인(요청 파싱 → Model Card 기반 모델 선택 → 전처리 → 실행 → 응답 생성), 모델 등록 가이드라인, 챗 인터페이스."
     },
     "details": {
-      "en": "## Problem\nMedical students need personalized feedback for clinical reasoning, but faculty time is limited. Existing AI tutors lack domain expertise and pedagogical awareness.\n\n## Solution\nChatMedi uses fine-tuned LLMs with medical knowledge bases and pedagogical frameworks to provide contextual, adaptive feedback during clinical case studies.\n\n## Outcome\nThe system demonstrated improved learning outcomes in controlled experiments. Research accepted to ACL 2025 Industry Track.",
-      "ko": "## 문제\n의대생들은 임상 추론에 대한 개인화된 피드백이 필요하지만 교수진의 시간은 제한적입니다. 기존 AI 튜터는 도메인 전문성과 교육학적 인식이 부족합니다.\n\n## 해결책\nChatMedi는 의료 지식 베이스와 교육학적 프레임워크로 미세 조정된 LLM을 사용하여 임상 사례 연구 중 맥락적이고 적응적인 피드백을 제공합니다.\n\n## 성과\n시스템은 통제된 실험에서 향상된 학습 결과를 보여주었습니다. ACL 2025 Industry Track에 연구가 채택되었습니다."
+      "en": "## Problem\nMedical AI models each require separate installation, different input formats, and produce outputs that are hard to interpret. This makes them inaccessible to non-technical medical professionals.\n\n## Solution\nChatMedi places an LLM as an orchestrator between the user and a registry of medical AI models. A user types a request like \"Check this chest X-ray for pneumonia,\" and the LLM reads through Model Cards to select the appropriate model, converts the input, runs the model, and returns the result in plain language.\n\nNew models can be added by writing a Model Card and registering it — the LLM automatically knows when and how to call it. The platform is designed to integrate with existing patented technologies including medical dialogue generation, empathetic psychotherapy AI, and chest X-ray lesion detection.\n\n## Outcome\nSupported by the Ministry of Science and ICT Bio-Medical Technology Development grant (RS-2023-0026527). Documented to patent invention disclosure level. Developed at KAIST Industrial Design.",
+      "ko": "## 문제\n의료 AI 모델은 각각 별도 설치가 필요하고, 입력 포맷이 다르며, 출력 해석이 어렵습니다. 비기술 전문가인 의료진에게는 사실상 접근이 불가능합니다.\n\n## 해결책\nChatMedi는 사용자와 의료 AI 모델 레지스트리 사이에 LLM을 오케스트레이터로 배치합니다. \"이 흉부 X-ray에서 폐렴 소견을 확인해줘\"라고 입력하면, LLM이 Model Card를 읽고 적합한 모델을 선택해 입력을 변환하고, 모델을 실행한 뒤 결과를 자연어로 돌려줍니다.\n\n새 모델은 Model Card를 작성하고 등록하면 됩니다. LLM이 자동으로 호출 시점과 방법을 판단합니다. 의료 대화 데이터 생성, 공감형 심리치료 AI, 흉부 X-ray 병변 판독 등 기존 특허 기술과 연동 가능하도록 설계했습니다.\n\n## 성과\n과학기술정보통신부 바이오·의료기술개발 사업(RS-2023-0026527) 지원. 발명설명서 수준까지 문서화. KAIST 산업디자인학과에서 개발."
     },
-    "images": ["/images/project-mazassumnida.webp"],
-    "videoUrl": null,
-    "links": {
-      "paper": "https://aclanthology.org/2025.acl-industry.123"
-    }
+    "images": ["/images/project-chatmedi.png"],
+    "videoUrl": "/videos/chatmedi-fasten.mp4",
+    "links": {}
   },
   {
     "slug": "saera",
     "title": "새라 (Saera)",
     "thumbnail": "/images/project-saera.webp",
-    "tags": ["Android", "Accessibility", "Voice UI"],
+    "tags": ["React Native", "FastAPI", "ML"],
     "order": 3,
-    "period": "2023.01 - 2023.05",
+    "period": "2023.01 - 2023.03, 2023.05",
     "summary": {
-      "en": "A cross-platform mobile application helping North Korean refugees learn South Korean accent and pronunciation through ML-powered voice analysis.",
-      "ko": "ML 기반 음성 분석을 통해 북한이탈주민이 남한 억양과 발음을 학습할 수 있도록 돕는 크로스 플랫폼 모바일 애플리케이션"
+      "en": "A mobile app for North Korean refugees to practice South Korean pronunciation and intonation, with real-time AI feedback showing where their pitch diverges from the standard.",
+      "ko": "북한이탈주민이 남한 표준 발음과 억양을 연습할 수 있는 모바일 앱입니다. AI가 실시간으로 음높이 차이를 시각적으로 보여줍니다."
     },
-    "techStack": ["React Native", "FastAPI", "TensorFlow", "SPICE Model", "Firebase"],
-    "team": "GDSC Sookmyung",
+    "techStack": ["React Native", "FastAPI", "SPICE Model", "DTW Algorithm", "Spring", "Firebase"],
+    "team": "GDSC Sookmyung (4인)",
     "role": {
-      "en": "Developed ML backend using FastAPI with SPICE model for pitch analysis. Designed UI/UX with focus on accessibility and user feedback.",
-      "ko": "억양 분석을 위한 SPICE 모델을 활용하여 FastAPI 기반 ML 백엔드 개발. 접근성과 사용자 피드백에 초점을 맞춘 UI/UX 디자인"
+      "en": "Designed UI/UX, managed the project, and built the ML backend. Implemented intonation graph extraction using the SPICE model, accent similarity scoring with DTW, and a similarity search API for sentence recommendations.",
+      "ko": "UI/UX 디자인, 프로젝트 매니지먼트, ML 서버 개발을 담당했습니다. SPICE 모델로 억양 그래프 추출, DTW로 억양 유사도 점수 산출, 유사도 검색 API로 문장 추천 기능을 구현했습니다."
     },
     "details": {
-      "en": "## Problem\nNorth Korean refugees face social discrimination due to their distinctive accent. Existing language learning apps don't address the specific needs of accent modification.\n\n## Solution\nSaera uses the SPICE ML model to analyze pitch patterns and compare them with standard South Korean pronunciation. DTW algorithm measures similarity and provides real-time feedback.\n\n## Outcome\nRecognized as a Global Top 100 Solution in the 2022 Google Solution Challenge. Featured at Google I/O Extended 2023.",
-      "ko": "## 문제\n북한이탈주민들은 특유의 억양으로 인해 사회적 차별을 받습니다. 기존 언어 학습 앱은 억양 교정의 구체적인 필요를 다루지 않습니다.\n\n## 해결책\n새라는 SPICE ML 모델을 사용하여 음높이 패턴을 분석하고 표준 남한 발음과 비교합니다. DTW 알고리즘이 유사도를 측정하고 실시간 피드백을 제공합니다.\n\n## 성과\n2022 Google Solution Challenge에서 Global Top 100 Solution으로 선정. Google I/O Extended 2023에서 발표."
+      "en": "## Problem\nNorth Korean refugees often face discrimination due to accent differences. They try to correct their speech, but no existing app addresses accent-specific learning. Research shows clear differences in vowel/consonant pronunciation and intonation patterns between North and South Korean.\n\n## Solution\nSaera provides pronunciation practice across 6 phonetic categories, accent practice with intonation graph visualization and scoring, and a custom sentence feature — input any sentence to get AI-generated standard pronunciation audio and intonation feedback.\n\nThe ML pipeline extracts pitch patterns from recordings using the SPICE model, then measures similarity to standard intonation with DTW. Users see visual feedback showing exactly where their pitch diverges.\n\n## Outcome\nGlobal Top 50 in the 2023 Google Solution Challenge.",
+      "ko": "## 문제\n북한이탈주민은 억양 차이로 인해 차별을 받는 경우가 많습니다. 발음 교정을 시도하지만, 억양 학습에 특화된 앱은 없었습니다. 연구에 따르면 남북한 간 모음/자음 발음과 억양 패턴에 뚜렷한 차이가 있습니다.\n\n## 해결책\n6가지 음운 카테고리별 발음 연습, 억양 그래프 시각화와 점수가 제공되는 억양 연습, 그리고 원하는 문장을 입력하면 AI가 표준 발음 음성과 억양 피드백을 생성해주는 커스텀 문장 기능을 제공합니다.\n\nML 파이프라인은 SPICE 모델로 녹음에서 음높이 패턴을 추출하고, DTW로 표준 억양과의 유사도를 측정합니다. 어디서 음높이가 벗어나는지 시각적으로 바로 확인할 수 있습니다.\n\n## 성과\n2023 Google Solution Challenge Global Top 50 선정."
     },
     "images": ["/images/project-saera.webp"],
     "videoUrl": "https://www.youtube.com/watch?v=zmuxz9bldj4",
@@ -86,22 +83,22 @@
     "slug": "notinote",
     "title": "NotiNote",
     "thumbnail": "/images/project-notinote.webp",
-    "tags": ["Android", "Productivity", "Widget"],
+    "tags": ["React Native", "FastAPI", "GCP"],
     "order": 4,
-    "period": "2022.01 - 2022.05",
+    "period": "2022.01 - 2022.03, 2022.05",
     "summary": {
-      "en": "A school newsletter translation and calendar management app for multicultural families, featuring OCR and NLP-powered event extraction.",
-      "ko": "OCR과 NLP 기반 일정 추출 기능을 갖춘 다문화 가정을 위한 가정통신문 번역 및 캘린더 관리 앱"
+      "en": "A mobile app for multicultural families — take a photo of a school newsletter, and it translates, extracts event dates with AI, and adds them to Google Calendar.",
+      "ko": "다문화 가정을 위한 모바일 앱입니다. 가정통신문을 사진으로 찍으면 번역하고, AI로 행사 날짜를 추출해 Google 캘린더에 등록합니다."
     },
-    "techStack": ["React Native", "FastAPI", "HuggingFace", "OCR", "Firebase"],
-    "team": "GDSC Sookmyung",
+    "techStack": ["React Native", "FastAPI", "Spring", "Google Cloud OCR", "Google Translation API", "HuggingFace QA Model"],
+    "team": "GDSC Sookmyung (4인)",
     "role": {
-      "en": "Developed frontend screens and ML backend. Implemented event extraction algorithm and improved accuracy to 84.6% using QA models.",
-      "ko": "프론트엔드 화면과 ML 백엔드 개발. 이벤트 추출 알고리즘 구현 및 QA 모델을 활용하여 정확도 84.6%로 개선"
+      "en": "Designed UI/UX, built the mobile client, and developed the ML server. Evolved the event extraction from regex-based pattern matching to a BERT-based QA model (84.6% accuracy) after Google mentor feedback.",
+      "ko": "UI/UX 디자인, 모바일 클라이언트, ML 서버 개발을 담당했습니다. 이벤트 추출 방식을 정규식 기반에서 BERT 기반 QA 모델(정확도 84.6%)로 발전시켰습니다. 구글 멘토의 피드백을 반영한 결과입니다."
     },
     "details": {
-      "en": "## Problem\nParents in multicultural families struggle to understand Korean school newsletters. Manual translation is time-consuming and error-prone for scheduling.\n\n## Solution\nNotiNote uses OCR to scan newsletters, NLP to extract event dates, and automatic translation to help parents manage school schedules in their native language.\n\n## Outcome\nSelected as Global Top 50 Semi-Finalist in 2022 Google Solution Challenge. Development story featured on Google Developers YouTube channel.",
-      "ko": "## 문제\n다문화 가정의 부모님들은 한국어 가정통신문을 이해하는 데 어려움을 겪습니다. 수동 번역은 시간이 많이 들고 일정 관리에서 오류가 발생하기 쉽습니다.\n\n## 해결책\nNotiNote는 OCR로 가정통신문을 스캔하고, NLP로 행사 날짜를 추출하며, 자동 번역으로 부모님이 모국어로 학교 일정을 관리할 수 있도록 돕습니다.\n\n## 성과\n2022 Google Solution Challenge에서 Global Top 50 Semi-Finalist로 선정. 개발 스토리가 Google Developers 공식 YouTube 채널에 소개됨."
+      "en": "## Problem\nMulticultural families in Korea have nearly tripled since 2013, but school newsletters are written in formal Korean that's hard even for native speakers. Local translation services take up to 2 days with a complicated request process.\n\n## Solution\nNotiNote photographs a newsletter, extracts text with Google Cloud OCR, translates it, and uses AI to find events and dates. The extraction pipeline started with regex and Korean grammar rules, then evolved to a BERT-based QA model that answers \"When is the [event]?\" — reaching 84.6% accuracy. Detected events are highlighted and can be added to Google Calendar with one tap.\n\n## Outcome\nGlobal Top 50 in the 2022 Google Solution Challenge. Received mentoring from Google UX designers and ML engineers. Featured on the Google Developers YouTube channel.",
+      "ko": "## 문제\n한국의 다문화 가정은 2013년 이후 약 3배 증가했지만, 가정통신문은 원어민도 어려워하는 격식체 한국어로 작성됩니다. 지자체 번역 서비스는 최대 2일 소요에 신청 과정도 복잡합니다.\n\n## 해결책\nNotiNote는 가정통신문을 촬영하면 Google Cloud OCR로 텍스트를 추출하고, 번역한 뒤, AI로 행사와 날짜를 찾습니다. 추출 파이프라인은 정규식과 한국어 문법 규칙에서 출발해, BERT 기반 QA 모델로 발전했습니다. \"[행사]는 언제인가요?\"라는 질문으로 날짜를 추출하며, 정확도 84.6%를 달성했습니다. 감지된 행사는 하이라이트되고, 탭 한 번으로 Google 캘린더에 추가됩니다.\n\n## 성과\n2022 Google Solution Challenge Global Top 50 선정. 구글 UX 디자이너와 ML 엔지니어의 멘토링을 받았습니다. Google Developers 공식 YouTube 채널에 소개되었습니다."
     },
     "images": ["/images/project-notinote.webp"],
     "videoUrl": "https://www.youtube.com/watch?v=zmuxz9bldj4",
@@ -111,53 +108,30 @@
     }
   },
   {
-    "slug": "goodlifelab-report",
-    "title": "GOODLIFELAB - 보고서 자동화",
-    "thumbnail": "/images/gll-logo.png",
-    "tags": ["Automation", "Full-Stack", "DevOps"],
+    "slug": "mazassumnida",
+    "title": "Mazassumnida",
+    "thumbnail": "/images/project-mazassumnida.webp",
+    "tags": ["Open Source", "Django", "SVG"],
     "order": 5,
-    "period": "2022.02 - 2022.12",
+    "period": "2021.08",
     "summary": {
-      "en": "An automated report generation system that reduced psychological test report creation time from 2 hours to 5 minutes.",
-      "ko": "심리 검사 보고서 생성 시간을 2시간에서 5분으로 단축한 자동화 시스템"
+      "en": "An open-source service that generates animated SVG badges showing Baekjoon Online Judge tiers for GitHub profiles. Gained traction immediately after launch.",
+      "ko": "백준 온라인 저지 티어를 GitHub 프로필에 보여주는 애니메이션 SVG 배지를 생성하는 오픈소스 서비스입니다. 공개 직후 빠르게 확산되었습니다."
     },
-    "techStack": ["Python", "FastAPI", "PostgreSQL", "Docker", "AWS"],
-    "team": "GOODLIFELAB",
+    "techStack": ["Django", "SVG", "CSS Animation", "solved.ac API"],
+    "team": "Team solved.wa (4인)",
     "role": {
-      "en": "Designed and implemented the full automation pipeline including data processing, template generation, and PDF rendering.",
-      "ko": "데이터 처리, 템플릿 생성, PDF 렌더링을 포함한 전체 자동화 파이프라인 설계 및 구현"
+      "en": "Designed and implemented all SVG badge templates — tier icons, gradient backgrounds, and animated experience bars. Solved GitHub's font rendering issue by embedding font glyphs as PNG directly into SVGs.",
+      "ko": "SVG 배지 템플릿 전체를 디자인하고 구현했습니다. 티어 아이콘, 그라데이션 배경, 애니메이션 경험치 바를 포함합니다. GitHub에서 폰트가 깨지는 문제는 글리프를 PNG로 변환해 SVG에 직접 삽입하는 방식으로 해결했습니다."
     },
     "details": {
-      "en": "## Problem\nPsychologists spent 2+ hours manually creating reports for each client's psychological assessment. This bottleneck limited the number of clients they could serve.\n\n## Solution\nBuilt an automated system that processes raw assessment data, applies scoring algorithms, generates personalized insights, and renders professional PDF reports.\n\n## Outcome\nReduced report generation time by 96% (from 2 hours to 5 minutes). System successfully deployed and used for 1000+ reports.",
-      "ko": "## 문제\n심리학자들이 각 내담자의 심리 평가 보고서를 수동으로 작성하는 데 2시간 이상 소요되었습니다. 이 병목 현상으로 서비스할 수 있는 내담자 수가 제한되었습니다.\n\n## 해결책\n원시 평가 데이터를 처리하고, 채점 알고리즘을 적용하며, 개인화된 인사이트를 생성하고, 전문적인 PDF 보고서를 렌더링하는 자동화 시스템을 구축했습니다.\n\n## 성과\n보고서 생성 시간을 96% 단축 (2시간에서 5분으로). 시스템이 성공적으로 배포되어 1000건 이상의 보고서에 사용됨."
+      "en": "## Problem\nDevelopers in the Korean competitive programming community wanted to display their Baekjoon Online Judge tier on GitHub profiles, but there was no clean way to do it.\n\n## Solution\nMazassumnida takes a Baekjoon handle via URL, fetches stats from the solved.ac API, and generates an SVG badge with current tier, rank, and an animated experience bar. The badge uses SVG @keyframes for smooth fill animations and gradient backgrounds.\n\nThe main technical challenge was font rendering. GitHub caches SVGs and strips external resource requests, breaking custom fonts. We solved this by converting font glyphs to PNG and embedding them directly in the SVG.\n\n## Outcome\n8 GitHub stars within the first hour, 17 within a day. Widely adopted across the Korean algorithm community.",
+      "ko": "## 문제\n한국 알고리즘 커뮤니티 개발자들이 GitHub 프로필에 백준 티어를 표시하고 싶었지만, 깔끔한 방법이 없었습니다.\n\n## 해결책\nMazassumnida는 URL로 백준 핸들을 받아 solved.ac API에서 정보를 가져온 뒤, 현재 티어, 랭킹, 애니메이션 경험치 바가 포함된 SVG 배지를 생성합니다. SVG @keyframes를 활용한 부드러운 채움 애니메이션과 그라데이션 배경이 적용되어 있습니다.\n\n주요 기술적 도전은 폰트 렌더링이었습니다. GitHub이 SVG 캐싱 과정에서 외부 리소스 요청을 차단해 커스텀 폰트가 깨지는 문제가 있었고, 글리프를 PNG로 변환해 SVG에 직접 삽입하는 방식으로 해결했습니다.\n\n## 성과\n공개 1시간 만에 GitHub 스타 8개, 하루 만에 17개. 한국 알고리즘 커뮤니티에서 널리 사용되고 있습니다."
     },
-    "images": ["/images/gll-logo.png"],
+    "images": ["/images/project-mazassumnida.webp"],
     "videoUrl": null,
-    "links": {}
-  },
-  {
-    "slug": "goodlifelab-test",
-    "title": "GOODLIFELAB - 바라던 바다 테스트",
-    "thumbnail": "/images/project-noonsongtest.webp",
-    "tags": ["Web", "Psychology", "Analytics"],
-    "order": 6,
-    "period": "2022.06 - 2022.08",
-    "summary": {
-      "en": "A viral psychology test web app that attracted 50,000+ users within 3 days of launch.",
-      "ko": "출시 3일 만에 5만 명 이상의 사용자를 모은 바이럴 심리 테스트 웹 앱"
-    },
-    "techStack": ["React", "Node.js", "MongoDB", "Google Analytics", "AWS"],
-    "team": "GOODLIFELAB",
-    "role": {
-      "en": "Led full-stack development including frontend, backend, and infrastructure setup. Managed traffic surge without downtime.",
-      "ko": "프론트엔드, 백엔드, 인프라 구축을 포함한 풀스택 개발 주도. 다운타임 없이 트래픽 급증 관리"
-    },
-    "details": {
-      "en": "## Problem\nThe company wanted to create viral content to increase brand awareness while providing psychological value to users.\n\n## Solution\nDeveloped an engaging, shareable psychology test with beautiful ocean-themed visuals. Implemented robust infrastructure to handle viral traffic.\n\n## Outcome\n50,000+ users completed the test within 3 days. Server remained stable throughout the traffic surge. Increased brand awareness and user acquisition.",
-      "ko": "## 문제\n회사는 사용자에게 심리적 가치를 제공하면서 브랜드 인지도를 높이기 위한 바이럴 콘텐츠를 만들고자 했습니다.\n\n## 해결책\n아름다운 바다 테마 비주얼과 함께 참여도 높고 공유하기 쉬운 심리 테스트를 개발했습니다. 바이럴 트래픽을 처리할 수 있는 견고한 인프라를 구현했습니다.\n\n## 성과\n3일 만에 5만 명 이상의 사용자가 테스트를 완료했습니다. 트래픽 급증 내내 서버가 안정적으로 유지되었습니다. 브랜드 인지도와 사용자 확보 증가."
-    },
-    "images": ["/images/project-noonsongtest.webp"],
-    "videoUrl": null,
-    "links": {}
+    "links": {
+      "github": "https://github.com/mazassumnida/mazassumnida"
+    }
   }
 ]

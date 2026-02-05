@@ -9,17 +9,17 @@ const projects = projectsData as ProjectSummary[];
 
 export default function ProjectGrid() {
   return (
-    <section className="lg:w-[40%] flex flex-col min-h-0 pl-12 pb-40">
+    <section className="lg:w-[40%] flex flex-col min-h-0 px-0 lg:pl-12 pb-8 lg:pb-40">
       <h2 className="text-sm font-bold uppercase tracking-wider mb-6 text-black">Projects</h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-rows-3 gap-3 flex-1 min-h-0">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-rows-3 gap-3 lg:flex-1 lg:min-h-0">
         {projects
           .sort((a, b) => a.order - b.order)
           .map((project) => (
             <Link
               key={project.slug}
               href={`/projects/${project.slug}`}
-              className="group relative bg-gray-100 overflow-hidden"
+              className="group relative bg-gray-100 overflow-hidden aspect-video lg:aspect-auto"
             >
               <Image
                 src={project.thumbnail}

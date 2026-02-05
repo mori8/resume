@@ -25,15 +25,15 @@ export default function IntroSection() {
 
       <div className="flex flex-col gap-1 mb-8">
         <div className="flex items-baseline gap-4">
-          <h1 className="text-4xl lg:text-5xl font-bold tracking-tight">{profile.name.ko}</h1>
-          <span className="text-2xl lg:text-3xl font-light tracking-wide text-gray-500">{profile.name.en}</span>
+          <h1 className="text-3xl lg:text-5xl font-bold tracking-tight">{profile.name.ko}</h1>
+          <span className="text-xl lg:text-3xl font-light tracking-wide text-gray-500">{profile.name.en}</span>
         </div>
       </div>
 
       {/* Title & Contact */}
       <div className="flex flex-col gap-4 mb-12">
         <p className="text-lg font-medium tracking-wide text-black">{profile.title[language]}</p>
-        <div className="flex gap-6 text-sm text-gray-500 uppercase tracking-wider">
+        <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-gray-500 uppercase tracking-wider">
           {profile.contact.slice(0, 2).map((contact) => (
             <a
               key={contact.type}
@@ -58,15 +58,15 @@ export default function IntroSection() {
 
       {/* Skills */}
       <div className="space-y-4 text-sm mt-auto">
-        <div className="grid grid-cols-[140px_1fr] gap-4 items-baseline">
+        <div className="grid grid-cols-1 md:grid-cols-[140px_1fr] gap-2 md:gap-4 items-baseline">
           <span className="font-bold uppercase tracking-wider text-xs text-gray-400">Programming</span>
           <span className="text-gray-800 font-light leading-relaxed">{profile.skills.programming.join(', ')}</span>
         </div>
-        <div className="grid grid-cols-[140px_1fr] gap-4 items-baseline">
+        <div className="grid grid-cols-1 md:grid-cols-[140px_1fr] gap-2 md:gap-4 items-baseline">
           <span className="font-bold uppercase tracking-wider text-xs text-gray-400">Qualitative R.</span>
           <span className="text-gray-800 font-light leading-relaxed">{profile.skills.qualitativeResearch.join(', ')}</span>
         </div>
-        <div className="grid grid-cols-[140px_1fr] gap-4 items-baseline">
+        <div className="grid grid-cols-1 md:grid-cols-[140px_1fr] gap-2 md:gap-4 items-baseline">
           <span className="font-bold uppercase tracking-wider text-xs text-gray-400">Design Tool</span>
           <span className="text-gray-800 font-light leading-relaxed">{profile.skills.design.join(', ')}</span>
         </div>
