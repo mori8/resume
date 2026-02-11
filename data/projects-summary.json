@@ -1,0 +1,37 @@
+[
+  {
+    "slug": "mindstock",
+    "title": "MindStock",
+    "thumbnail": "/images/project-mindstock.png",
+    "tags": ["React Native", "Firebase", "HCI"],
+    "order": 1
+  },
+  {
+    "slug": "chatmedi",
+    "title": "ChatMedi",
+    "thumbnail": "/images/project-chatmedi.png",
+    "tags": ["LLM", "Healthcare", "HCI"],
+    "order": 2
+  },
+  {
+    "slug": "saera",
+    "title": "새라 (Saera)",
+    "thumbnail": "/images/project-saera.webp",
+    "tags": ["React Native", "FastAPI", "ML"],
+    "order": 3
+  },
+  {
+    "slug": "notinote",
+    "title": "NotiNote",
+    "thumbnail": "/images/project-notinote.webp",
+    "tags": ["React Native", "FastAPI", "GCP"],
+    "order": 4
+  },
+  {
+    "slug": "mazassumnida",
+    "title": "Mazassumnida",
+    "thumbnail": "/images/project-mazassumnida.webp",
+    "tags": ["Open Source", "Django", "SVG"],
+    "order": 5
+  }
+]

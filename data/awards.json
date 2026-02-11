@@ -1,0 +1,38 @@
+[
+  {
+    "year": "2024",
+    "title": {
+      "ko": "최우등졸업, 숙명여자대학교 (GPA 4.22/4.3)",
+      "en": "Summa Cum Laude, Sookmyung Women's University (GPA 4.22/4.3)"
+    }
+  },
+  {
+    "year": "2023",
+    "title": {
+      "ko": "2023 Google Solution Challenge Top 100 Semi-Finalist (새라)",
+      "en": "2023 Google Solution Challenge Top 100 Semi-Finalist (Saera)"
+    }
+  },
+  {
+    "year": "2022",
+    "title": {
+      "ko": "2022 Google Solution Challenge Top 50 Semi-Finalist (NotiNote)",
+      "en": "2022 Google Solution Challenge Top 50 Semi-Finalist (NotiNote)"
+    },
+    "link": "https://www.youtube.com/watch?v=example"
+  },
+  {
+    "year": "2022",
+    "title": {
+      "ko": "국가우수장학금(이공계), 한국장학재단 (2년 전액)",
+      "en": "National Science & Engineering Scholarship, Korea Scholarship Foundation (2 years full)"
+    }
+  },
+  {
+    "year": "2022",
+    "title": {
+      "ko": "Google Developer Student Clubs (GDSC) 21-22 Outstanding Lead",
+      "en": "Google Developer Student Clubs (GDSC) 21-22 Outstanding Lead"
+    }
+  }
+]

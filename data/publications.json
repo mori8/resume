@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "From Impulsive Investment to Mindful Decisions: Exploring Design Opportunities of AI-Mediated Interventions for Emotionally Biased Investors",
+    "authors": ["Sooyohn Nam", "Yeohyun Jung", "Hwajung Hong"],
+    "venue": "Companion Publication of the 2025 ACM Designing Interactive Systems Conference",
+    "venueShort": "DIS PWiP 2025",
+    "year": 2025,
+    "type": "conference",
+    "isFirstAuthor": true,
+    "links": {
+      "doi": "https://doi.org/10.1145/3715628.3716953"
+    }
+  },
+  {
+    "id": 2,
+    "title": "PANORAMA: A Dataset and Benchmarks Capturing Decision Trails and Rationales in Patent Examination",
+    "authors": ["Hyunseung Lim", "Sooyohn Nam", "Sungmin Na", "Ji Yong Cho", "June Yong Yang", "Hyungyu Shin", "Yoonjoo Lee", "Juho Kim", "Moontae Lee", "Hwajung Hong"],
+    "venue": "The Thirty-ninth Annual Conference on Neural Information Processing Systems Datasets and Benchmarks Track",
+    "venueShort": "NeurIPS 2025 Poster",
+    "year": 2025,
+    "type": "conference",
+    "isFirstAuthor": false,
+    "links": {
+      "openreview": "https://openreview.net/forum?id=example",
+      "github": "https://github.com/example/panorama",
+      "huggingface": "https://huggingface.co/datasets/example/panorama"
+    }
+  },
+  {
+    "id": 3,
+    "title": "Feed-O-Meter: Investigating AI-generated mentee personas as interactive agents for scaffolding design feedback practice",
+    "authors": ["Hyunseung Lim", "Dasom Choi", "DaEun Choi", "Sooyohn Nam", "Hwajung Hong"],
+    "venue": "International Journal of Human-Computer Studies, Volume 208",
+    "venueShort": "IJHCS 2026",
+    "year": 2026,
+    "type": "journal",
+    "isFirstAuthor": false,
+    "links": {
+      "doi": "https://doi.org/10.1016/j.ijhcs.2025.example"
+    }
+  },
+  {
+    "id": 4,
+    "title": "A Large-Scale Real-World Evaluation of an LLM-Based Virtual Teaching Assistant",
+    "authors": ["Sunjun Kweon", "Sooyohn Nam", "Hyunseung Lim", "Hwajung Hong", "Edward Choi"],
+    "venue": "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Industry Track)",
+    "venueShort": "ACL Industry Track 2025",
+    "year": 2025,
+    "type": "conference",
+    "isFirstAuthor": false,
+    "links": {
+      "doi": "https://doi.org/10.18653/v1/2025.acl-industry.example"
+    }
+  }
+]

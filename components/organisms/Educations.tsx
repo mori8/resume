@@ -1,6 +1,4 @@
 import * as React from "react";
-import HighlightedText from "../atoms/HighlightedText";
-import CustomLi from "../atoms/CustomLi";
 import SectionWrapper from "../molecules/SectionWrapper";
 import educations from "../../data/educations.json";
 
@@ -9,25 +7,30 @@ export default function Educations() {
     <SectionWrapper sectionTitle="Educations">
       <div className="flex flex-col gap-8">
         {educations.map((education, index) => (
-          <div className="flex-1 flex flex-col">
+          <div key={index} className="flex-1 flex flex-col">
             <div>
               <div className="flex flex-row justify-between">
-                <h3 className="text-lg font-bold">{education.univ}</h3>
+                <h3 className="text-lg font-bold">{education.school.en}</h3>
                 <span className="text-sm">{education.period}</span>
               </div>
               <div className="flex flex-row gap-3">
-                {education.GPA && (
+                <span className="text-sm text-gray-600">{education.degree.en}</span>
+                {education.gpa && (
                   <span>
-                    GPA <b>{education.GPA}</b>
+                    GPA <b>{education.gpa}</b>
                   </span>
                 )}
               </div>
             </div>
-            <div className="mt-2 text-slate-700 text-sm">
-              <p className="whitespace-pre-wrap leading-relaxed">
-                {education.description}
-              </p>
-            </div>
+            {education.details && (
+              <div className="mt-2 text-slate-700 text-sm">
+                <ul className="list-disc list-inside">
+                  {education.details.en.map((detail, dIndex) => (
+                    <li key={dIndex}>{detail}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
         ))}
       </div>
